@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv template 12</title>
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="page cv-template12" size="A4">
+        <!-- LAYOUT ON THE LEFT \ START -->
+        <div class="cv-primary">
+            <div class="profile">
+                <div class="profile__image">
+                    <img src="/images/avatar.png" alt="Avatar">
+                </div>
+                <div class="profile__info">
+                    <h3 class="info__name">nguyen van a</h3>
+                    <p class="info__position">facilisis sed</p>
+                    <p class="position__info">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CONTACT \ START -->
+            <div class="contact__content">
+                <h2 class="contact__title">contact</h2>
+                <div class="extra__item" v-show="data.profile.birthday">
+                    <p class="extra__title">
+                        <i class="fas fa-calendar-alt"></i>
+                    </p>
+                    <p class="extra__content">1999/01/01</p>
+                </div>
+                <div class="extra__item" v-show="data.profile.phone">
+                    <p class="extra__title">
+                        <i class="fas fa-venus-mars"></i>
+                    </p>
+                    <p class="extra__content">enim</p>
+                </div>
+                <div class="extra__item" v-show="data.profile.phone">
+                    <p class="extra__title">
+                        <i class="fas fa-phone"></i>
+                    </p>
+                    <p class="extra__content">099xxxxxx</p>
+                </div>
+                <div class="extra__item" v-show="data.profile.phone">
+                    <p class="extra__title">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </p>
+                    <p class="extra__content">eu_facilisis_sed@amet.enim</p>
+                </div>
+                <div class="extra__item" v-show="data.profile.phone">
+                    <p class="extra__title">
+                        <i class="fas fa-home"></i>
+                    </p>
+                    <p class="extra__content">eu, facilisis, sed</p>
+                </div>
+                <div class="extra__item" v-show="data.profile.phone">
+                    <p class="extra__title">
+                        <i class="fas fa-globe-asia"></i>
+                    </p>
+                    <p class="extra__content">https://eu.facilisis.sed</p>
+                </div>
+            </div>
+            <!-- CONTACT \ END -->
+
+            <!-- EDUCATION \ START -->
+            <div class="education__content">
+                <h2 class="education__title">education</h2>
+                <div class="education__item" v-for="(item, index) in educationComputed.data" :key="'education' + index">
+                    <div class="item__title">
+                        <span class="item__date">
+                            2026
+                        </span>
+                    </div>
+                    <div class="item__content">
+                        <span class="item__text">
+                            at elementum eu
+                        </span>
+                        <div class="item__degree">facilisis sed</div>
+                        <div class="item__desc">description</div>
+                    </div>
+                </div>
+                <div class="education__item" v-for="(item, index) in educationComputed.data" :key="'education' + index">
+                    <div class="item__title">
+                        <span class="item__date">
+                            2020
+                        </span>
+                    </div>
+                    <div class="item__content">
+                        <span class="item__text">
+                            at elementum eu
+                        </span>
+                        <div class="item__degree">facilisis sed</div>
+                    </div>
+                </div>
+            </div>
+            <!-- EDUCATION \ END -->
+
+            <!-- LANGUAGE \ START -->
+            <div class="languages__content">
+                <h2 class="languages__title">languages</h2>
+                <div class="language__content" id="lang-level" v-for="(item, index) in foreignLanguageComputed.data"
+                    :key="'language' + index" v-show="item.skill">
+                    <!-- Render at Javascript \_> starRating.js -->
+                </div>
+            </div>
+            <!-- LANGUAGE \ END -->
+
+            <!-- ACHIEVEMENT \ START -->
+            <div class="achievements__content">
+                <h2 class="achievements__title">achievements</h2>
+                <div class="achievement__content">
+                    <div class="achievement__item">
+                        <span class="item__date">2013</span>
+                        <span class="item__text">Ten thanh tich/giai thuong ()aasdfwe</span>
+                    </div>
+                    <div class="achievement__item">
+                        <span class="item__date">2013</span>
+                        <span class="item__text">Ten thanh tich/giai thuong ()aasdfwe</span>
+                    </div>
+                    <div class="achievement__item">
+                        <span class="item__date">2013</span>
+                        <span class="item__text">Ten thanh tich/giai thuong ()aasdfwe</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ACHIEVEMENT \ END -->
+
+            <!-- HOBBY \ START -->
+            <div class="hobbies__content">
+                <h2 class="hobbies__title">hobbies</h2>
+                <div class="hobby__item">
+                    <span class="item__icon">
+                        <i class="fas fa-music"></i>
+                    </span>
+                    <span class="item__icon">
+                        <i class="fas fa-futbol"></i>
+                    </span>
+                    <span class="item__icon">
+                        <i class="fas fa-gamepad"></i>
+                    </span>
+                    <span class="item__icon">
+                        <i class="fas fa-swimmer"></i>
+                    </span>
+                    <span class="item__icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- HOBBY \ END -->
+        </div>
+        <!-- LAYOUT ON THE LEFT \ END -->
+
+        <!-- LAYOUT ON THE RIGHT \ START-->
+        <div class="cv-extra">
+            <!-- SUMMARY \ START -->
+            <div class="summary" v-show="data.summary">
+                <div class="section__title">
+                    <span class="section__icon">
+                        <i class="fas fa-address-card"></i>
+                    </span>
+                    <span class="section__text">SUMMARY</span>
+                </div>
+                <div class="summary__content" v-html="data.summary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+            </div>
+            <!-- SUMMARY \ END -->
+
+            <!-- SKILLS \ START -->
+            <div class="skill" v-show="!!skillComputed.data.length">
+                <div class="section__title">
+                    <span class="section__icon">
+                        <i class="fas fa-code"></i>
+                    </span>
+                    <span class="section__text">SKILLS</span>
+                </div>
+                <div class="skill__content" id="skill-bar">
+                    <!-- Render at Javascript \_> skillBar.js -->
+                </div>
+            </div>
+            <!-- SKILL \ END -->
+
+            <!-- WORKING HISTORY \ START -->
+            <div class="career-history" v-show="!!skillComputed.data.length">
+                <div class="section__title">
+                    <span class="section__icon">
+                        <i class="fas fa-suitcase"></i>
+                    </span>
+                    <span class="section__text">WORKING HISTORY</span>
+                </div>
+                <div class="career-history__content">
+                    <div class="career-history__item">
+                        <h3 class="item__title">Company name</h3>
+                        <p class="item__datetime">start date - end date</p>
+                        <p class="item__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                    </div>
+                    <div class="career-history__item">
+                        <h3 class="item__title">Company name</h3>
+                        <p class="item__datetime">start date - end date</p>
+                        <p class="item__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                        </p>
+                    </div>
+                </div>
+                <!-- WORKING HISTORY \ END -->
+
+                <!-- PRPJECTS \ START -->
+                <div class="project mb-4" v-show="!!projectComputed.length">
+                    <div class="section__title">
+                        <span class="section__icon">
+                            <i class="fas fa-archive"></i>
+                        </span>
+                        <span class="section__text">PROJECTS</span>
+                    </div>
+                    <div class="project__content mt-4">
+                        <ul class="ticker__list">
+                            <li class="ticker__item project__item" v-for="(item, index) in projectComputed"
+                                :key="'project' + index">
+                                <div class="project__title">
+                                    <p class="text-primary">
+                                        pellentesque dignissim enim sit amet
+                                    </p>
+                                    <span>
+                                        enim
+                                        <span v-show="item.start_date && item.end_date"> - </span>
+                                        amet
+                                    </span>
+                                </div>
+                                <p v-show="item.position">
+                                    <strong>Project name:</strong>
+                                    pellentesque dignissim
+                                </p>
+                                <p v-show="item.position">
+                                    <strong>Position:</strong>
+                                    pellentesque dignissim
+                                </p>
+                                <p v-show="item.position">
+                                    <strong>Link:</strong>
+                                    pellentesque diam volutpat commodo sed
+                                </p>
+                                <p v-show="item.position">
+                                    <strong>Development Environment:</strong>
+                                    pellentesque diam volutpat commodo sed
+                                </p>
+                                <div class="project__desc" v-html="item.content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua.
+                                </div>
+                            </li>
+                            <li class="ticker__item project__item" v-for="(item, index) in projectComputed"
+                                :key="'project' + index">
+                                <div class="project__title">
+                                    <p class="text-primary">
+                                        pellentesque dignissim enim sit amet
+                                    </p>
+                                    <span>
+                                        enim
+                                        <span v-show="item.start_date && item.end_date"> - </span>
+                                        amet
+                                    </span>
+                                </div>
+                                <p v-show="item.position">
+                                    <strong>Project name:</strong>
+                                    pellentesque dignissim
+                                </p>
+                                <p v-show="item.position">
+                                    <strong>Position:</strong>
+                                    pellentesque dignissim
+                                </p>
+                                <p v-show="item.position">
+                                    <strong>Link:</strong>
+                                    pellentesque diam volutpat commodo sed
+                                </p>
+                                <p v-show="item.position">
+                                    <strong>Development Environment:</strong>
+                                    pellentesque diam volutpat commodo sed
+                                </p>
+                                <div class="project__desc" v-html="item.content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- PRPJECTS \ END -->
+
+                <!-- REFERENCE \ START -->
+                <div class="reference" v-show="!!referenceComputed.length">
+                    <div class="section__title">
+                        <span class="section__icon">
+                            <i class="fas fa-archive"></i>
+                        </span>
+                        <span class="section__text">REFERENCES</span>
+                    </div>
+                    <div class="reference__content">
+                        <ul class="ticker__list">
+                            <li class="ticker__item" v-for="(item, index) in referenceComputed"
+                                :key="'reference' + index">
+                                <p class="reference-item__title">
+                                    <strong class="item-title__name">
+                                        at elementum eu
+                                        <span v-show="item.full_name && item.position"></span>
+                                    </strong>
+                                    <span class="item-title__company" v-show="item.company">
+                                        <strong>facilisis</strong>
+                                        - eu facilisis sed</span>
+                                </p>
+                                <p v-show="item.phone">Phone: 099xxxxxx</p>
+                                <p v-show="item.email">Email: eu_facilisis_sed@amet.enim</p>
+                            </li>
+                            <li class="ticker__item" v-for="(item, index) in referenceComputed"
+                                :key="'reference' + index">
+                                <p class="reference-item__title">
+                                    <strong class="item-title__name">
+                                        at elementum eu
+                                        <span v-show="item.full_name && item.position"></span>
+                                    </strong>
+                                    <span class="item-title__company" v-show="item.company">
+                                        <strong>facilisis</strong>
+                                        - eu facilisis sed</span>
+                                </p>
+                                <p v-show="item.phone">Phone: 099xxxxxx</p>
+                                <p v-show="item.email">Email: eu_facilisis_sed@amet.enim</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- REFERENCE \ END -->
+            </div>
+        </div>
+        <!-- LAYOUT ON THE RIGHT \ END -->
+
+        <script src="/app/js/starRating.js"></script>
+        <script src="/app/js/skillBar.js"></script>
+</body>
+
+</html>

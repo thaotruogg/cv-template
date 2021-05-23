@@ -1,0 +1,448 @@
+// CV TEMPLATE 12 \ STYLE
+
+.cv-template12 {
+	padding: 1.125rem 0.9375rem;
+	display: grid;
+	grid-template-columns: 17.5rem auto;
+	background: $light-gray;
+	.cv-primary {
+		background-color: $blue-gray;
+		border-radius: 1.75rem;
+		margin: 0 0.875rem;
+
+		.profile {
+			margin-bottom: 2.5rem;
+			&__image {
+				background-color: $white;
+				margin: 0 auto;
+				margin-top: 2rem;
+				margin-bottom: 1.5rem;
+				width: 11.25rem;
+				height: 11.25rem;
+				border-radius: 999px;
+
+				img {
+					width: 100%;
+					height: 100%;
+					border-radius: 999px;
+				}
+			}
+
+			&__info {
+				text-align: center;
+				font-size: 0.875rem;
+
+				.info__name {
+					text-transform: uppercase;
+					color: $white;
+					margin-bottom: 0.25rem;
+					font-size: 1.5rem;
+				}
+
+				.info__position {
+					color: $orange;
+					font-style: italic;
+					font-weight: 300;
+					font-size: 1rem;
+					margin-bottom: 1rem;
+				}
+
+				.position__info {
+					color: $white;
+					text-align: left;
+					padding: 0 16px;
+					font-style: italic;
+					font-weight: 300;
+					line-height: 1.25rem;
+				}
+			}
+		}
+
+		.contact__content {
+			.extra {
+				&__item {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					margin: 0.5rem 0;
+				}
+
+				&__title {
+					margin-right: 0.5rem;
+
+					i {
+						color: $orange;
+						width: 18px;
+					}
+				}
+
+				&__content {
+					font-style: italic;
+					color: $white;
+				}
+			}
+		}
+
+		.education__content {
+			.education__item {
+				display: flex;
+
+				.item {
+					&__title {
+						color: $orange;
+						font-weight: 500;
+						font-style: italic;
+						margin-right: 12px;
+					}
+					&__content {
+						display: flex;
+						flex-direction: column;
+						.item__text {
+							font-weight: 500;
+							text-transform: uppercase;
+						}
+						.item__text,
+						.item__degree,
+						.item__desc {
+							font-style: italic;
+							margin-bottom: 8px;
+						}
+					}
+				}
+			}
+		}
+
+		.languages__content {
+			.language__content {
+				.language__item {
+					display: flex;
+					justify-content: space-between;
+					.star-outer {
+						position: relative;
+						display: inline-block;
+
+						&::before {
+							content: "\f005 \f005 \f005 \f005 \f005";
+							font-family: "Font Awesome 5 Free";
+							font-weight: 200;
+							color: $orange;
+						}
+					}
+					.star-inner {
+						position: absolute;
+						top: 0;
+						left: 0;
+						overflow: hidden;
+						white-space: nowrap;
+						width: 0;
+
+						&::before {
+							content: "\f005 \f005 \f005 \f005 \f005";
+							font-family: "Font Awesome 5 Free";
+							font-weight: 900;
+							color: $orange;
+						}
+					}
+				}
+			}
+		}
+
+		.achievements__content {
+			.achievement {
+				&__item {
+					display: flex;
+					margin-bottom: 0.5rem;
+					.item {
+						&__date {
+							margin-right: 0.75rem;
+							font-weight: 700;
+							font-style: italic;
+							color: $orange;
+						}
+						&__text {
+							font-style: italic;
+							line-height: 1rem;
+						}
+					}
+				}
+			}
+		}
+
+		.hobbies__content {
+			.hobby__item {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+				.item {
+					&__icon {
+						color: $orange;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+						i {
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+
+		.contact,
+		.education,
+		.languages,
+		.achievements,
+		.hobbies,
+		.reference {
+			&__title {
+				text-transform: uppercase;
+				text-align: center;
+				border-bottom: 1px solid $white;
+				padding-bottom: 0.625rem;
+				margin-bottom: 0.625rem;
+				font-size: 1.125rem;
+			}
+
+			&__content {
+				color: $white;
+				padding: 0 1rem;
+				margin-bottom: 24px;
+
+				font-size: 0.875rem;
+			}
+		}
+	}
+
+	.cv-extra {
+		background-color: $light-gray;
+		font-size: 0.875rem;
+		padding-left: 0.875rem;
+		padding-right: 0.875rem;
+
+		.summary {
+			.section {
+				&__title {
+					//
+				}
+			}
+			&__content {
+				font-style: italic;
+				font-weight: 300;
+				line-height: 1.25rem;
+			}
+		}
+
+		.skill {
+			&__content {
+				padding: 0 1rem;
+				.skill__item {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 0.75rem;
+					.item__title {
+						margin-bottom: 0.375rem;
+						font-style: italic;
+					}
+					.skill-bar__outer {
+						position: relative;
+						width: 100%;
+						height: 0.625rem;
+						background-color: $lighter-gray;
+						border-radius: 0.5rem;
+					}
+
+					.skill-bar__inner {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 58%;
+						height: 0.625rem;
+						background-color: $orange;
+						border-radius: 0.5rem;
+						display: flex;
+						align-items: center;
+
+						&::after {
+							content: "";
+							width: 16px;
+							height: 16px;
+							background-color: $white;
+							border-radius: 999px;
+							position: absolute;
+							top: -3px;
+							left: 97%;
+						}
+					}
+				}
+			}
+		}
+
+		.career-history {
+			&__content {
+				.career-history__item {
+					padding-left: 28px;
+					position: relative;
+
+					&:not(:last-child) {
+						margin-bottom: 20px;
+
+						&::before {
+							height: calc(100% + 16px);
+						}
+					}
+
+					.item__title,
+					.item__datetime {
+						text-transform: uppercase;
+						font-style: italic;
+						margin-bottom: 0.375rem;
+						font-weight: 300;
+					}
+
+					.item__title {
+						font-size: 1rem;
+						font-weight: 500;
+					}
+
+					.item__desc {
+						font-style: italic;
+						line-height: 1.25rem;
+						font-weight: 300;
+					}
+
+					&::after {
+						content: "";
+						width: 12px;
+						height: 12px;
+						background-color: $orange;
+						position: absolute;
+						top: 4px;
+						left: -1px;
+						border-radius: 999px;
+					}
+
+					&::before {
+						content: "";
+						width: 2px;
+						height: calc(100% - 10px);
+						background-color: $gray;
+						position: absolute;
+						top: 8px;
+						left: 4px;
+					}
+				}
+			}
+		}
+
+		.project,
+		.reference {
+			&__content {
+				.ticker__list {
+					.ticker__item.project__item,
+					.ticker__item {
+						padding-left: 28px;
+						position: relative;
+						font-style: italic;
+						&:not(:last-child) {
+							margin-bottom: 20px;
+
+							&::before {
+								height: calc(100% + 16px);
+							}
+						}
+						&::after {
+							content: "";
+							width: 12px;
+							height: 12px;
+							background-color: $orange;
+							position: absolute;
+							top: 4px;
+							left: -1px;
+							border-radius: 999px;
+						}
+
+						&::before {
+							content: "";
+							width: 2px;
+							height: calc(100% - 10px);
+							background-color: $gray;
+							position: absolute;
+							top: 8px;
+							left: 4px;
+						}
+						& > * {
+							margin: 4px 0;
+							&:not(:last-child) {
+								margin-bottom: 0;
+							}
+						}
+
+						.project__title {
+							display: flex;
+							justify-content: space-between;
+							.text-primary {
+								font-size: 1rem;
+								text-transform: uppercase;
+								font-weight: 500;
+							}
+						}
+
+						p {
+							font-weight: 300;
+							strong {
+								font-weight: 500;
+							}
+						}
+					}
+
+					.ticker__item {
+						.reference-item__title {
+							display: flex;
+							flex-direction: column;
+							.item-title__name {
+								text-transform: capitalize;
+								margin-bottom: 0.25rem;
+							}
+						}
+					}
+				}
+			}
+
+			&__desc {
+				font-weight: 300;
+				font-style: italic;
+				line-height: 1.25rem;
+			}
+		}
+
+		.summary,
+		.skill,
+		.career-history,
+		.project {
+			.section {
+				&__title {
+					font-size: 1.25rem;
+					display: flex;
+					align-items: center;
+					border-bottom: 0.125rem solid $black;
+					padding-bottom: 0.5rem;
+					margin-bottom: 1.25rem;
+					margin-top: 28px;
+					.section__icon {
+						background-color: $orange;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 2.125rem;
+						height: 2.125rem;
+						border-radius: 62.4375rem;
+						margin-right: 0.75rem;
+						i {
+							color: $white;
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

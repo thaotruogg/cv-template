@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="page cv-template11" size="A4">
+        <div class="svg-style">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="595.032"
+                height="327.168" viewBox="0 0 595.032 327.168">
+                <defs>
+                    <filter id="Path_2" x="24.239" y="0" width="553.344" height="308.457" filterUnits="userSpaceOnUse">
+                        <feOffset dx="2" dy="-7" input="SourceAlpha" />
+                        <feGaussianBlur stdDeviation="4" result="blur" />
+                        <feFlood flood-opacity="0.161" />
+                        <feComposite operator="in" in2="blur" />
+                        <feComposite in="SourceGraphic" />
+                    </filter>
+                </defs>
+                <g id="Group_1" data-name="Group 1" transform="translate(0 2.56)">
+                    <path id="Path_1" data-name="Path 1" d="M0,157.682,62.594,15.734,34.287,257.554,0,276.714Z"
+                        fill="#a93c28" />
+                    <g transform="matrix(1, 0, 0, 1, 0, -2.56)" filter="url(#Path_2)">
+                        <path id="Path_2-2" data-name="Path 2"
+                            d="M34.239,257.456,559.549,300.9l4.034-25.075L322.06,255.547l17.218-105.01,55.329.838L62.289,16.44Z"
+                            transform="translate(0 2.56)" fill="#f4543a" />
+                    </g>
+                    <path id="Path_3" data-name="Path 3" d="M559.52,300.837l35.475-22.416-31.357-2.6Z" fill="#062945" />
+                    <path id="Path_5" data-name="Path 5"
+                        d="M339.4,150.537,322.272,255.566,595.2,278.44,584.066,154.609Z" transform="translate(-8 5)"
+                        fill="rgba(121,42,29,0.5)" />
+                    <path id="Path_7" data-name="Path 7" d="M0,0V158.025L62.252,16.418,371.434,141.673,407.063-.24Z"
+                        fill="#323651" />
+                    <path id="Path_4" data-name="Path 4" d="M339.4,150.537,322.272,255.566l272.76,22.874-10.762-123.6Z"
+                        fill="#ffbe29" />
+                    <path id="Path_6" data-name="Path 6"
+                        d="M0,282.884l34.251-18.838,529.959,60.562,30.8-39.373V278.4l-35.518,22.435L34.251,257.457,0,276.745Z"
+                        fill="#d1d2d4" />
+                    <path id="Path_8" data-name="Path 8" d="M489.186,0l105.65,43.312V0Z" fill="#323651" />
+                    <path id="Path_9" data-name="Path 9" d="M56.22,144.321H273.132l2.154-20.248H58.159Z"
+                        fill="#323651" />
+                </g>
+            </svg>
+
+        </div>
+
+        <div class="profile">
+            <h2 class="profile__heading">profile</h2>
+            <div class="about__content">
+                <h3 class="content__title">about me</h3>
+                <div class="about-child__content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Id leo in vitae turpis massa sed elementum tempus. Enim facilisis gravida neque convallis a
+                    cras semper. Cursus
+                    mattis molestie a iaculis at erat pellentesque. Eget sit amet tellus cras adipiscing enim eu.
+                </div>
+            </div>
+            <div class="profile__content">
+                <h3 class="info__name">
+                    Lorem ipsum dolor
+                </h3>
+                <p class="info__position">
+                    urna neque viverra justo
+                </p>
+            </div>
+            <div class="profile__avatar">
+                <div class="profile__image" v-if="data.profile.avatar">
+                    <img src="/images/avatar.png" alt="Avatar" />
+                </div>
+            </div>
+        </div>
+
+        <div class="primary__content">
+            <div class="layout__left">
+                <div class="contact">
+                    <h3 class="content__title">contact</h3>
+                    <div class="triangle"></div>
+                    <div class="main__content">
+                        <div class="extra__item" v-show="data.profile.phone">
+                            <p class="extra__title">
+                                <i class="fas fa-home"></i>
+                            </p>
+                            <p class="extra__content">eu, facilisis, sed</p>
+                        </div>
+                        <div class="extra__item" v-show="data.profile.phone">
+                            <p class="extra__title">
+                                <i class="fas fa-envelope"></i>
+                            </p>
+                            <p class="extra__content">eu, facilisis, sed</p>
+                        </div>
+                        <div class="extra__item" v-show="data.profile.phone">
+                            <p class="extra__title">
+                                <i class="fas fa-phone"></i>
+                            </p>
+                            <p class="extra__content">
+                                <span class="child">+84 9xx xxx xx</span>
+                                <span class="child">+84 9xx xxx xx</span>
+                            </p>
+                        </div>
+                        <div class="extra__item" v-show="data.profile.phone">
+                            <p class="extra__title">
+                                <i class="fab fa-facebook-square"></i>
+                            </p>
+                            <p class="extra__content">facebook.com/facilisis</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="language">
+                    <h3 class="content__title">language</h3>
+                    <div class="triangle"></div>
+                    <div class="main__content" id="lang-level">
+                        <!-- render at js \ ribbonRating.js -->
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h3 class="content__title">skill</h3>
+                    <div class="triangle"></div>
+                    <div class="main__content" id="skill-level">
+                        <!-- render at js -->
+                    </div>
+                </div>
+
+                <div class="hobby">
+                    <h3 class="content__title">hobbies</h3>
+                    <div class="triangle"></div>
+                    <div class="main__content" id="skill-level">
+                        <div class="hobby__item">
+                            <span><i class="fas fa-swimmer"></i></span>
+                        </div>
+                        <div class="hobby__item">
+                            <span><i class="far fa-futbol"></i></span>
+                        </div>
+                        <div class="hobby__item">
+                            <span><i class="fas fa-map-marked-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layout__right">
+                <div class="achievement">
+                    <div class="content__title">
+                        <span><i class="fas fa-briefcase"></i></span>
+                        <h3 class="heading">achievements</h3>
+                    </div>
+                    <div class="main__content">
+                        <div class="achievement__item">
+                            <h3 class="item__title">cty growupwork co ltd vietnam</h3>
+                            <p class="item__date-working">2018 - present</p>
+                            <div class="item__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/app/js/ribbonRating.js"></script>
+    <script src="/app/js/skillCircle.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+html,
+body {
+	width: 100%;
+	background-color: lightgray;
+	font-family: "Roboto", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+.page {
+	background-color: white;
+	display: block;
+	margin: 0 auto;
+}
+
+.page[size="A4"] {
+	width: 220mm;
+	min-height: 297mm;
+}
+
+ul {
+	list-style-type: none;
+}
+
+strong {
+	font-weight: 500;
+}
