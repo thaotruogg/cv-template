@@ -16,7 +16,8 @@
 
 <body>
     <div class="page cv-template11" size="A4">
-        <div class="svg-style">
+        <!-- SVG on top -->
+        <div class="svg-top">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="595.032"
                 height="327.168" viewBox="0 0 595.032 327.168">
                 <defs>
@@ -55,6 +56,7 @@
 
         </div>
 
+        <!-- Profile layout on SVG tag | START -->
         <div class="profile">
             <h2 class="profile__heading">profile</h2>
             <div class="about__content">
@@ -81,9 +83,13 @@
                 </div>
             </div>
         </div>
+        <!-- Profile layout on SVG tag | END -->
 
+        <!-- Main content tag -->
         <div class="primary__content">
+            <!-- Content at the left \ START -->
             <div class="layout__left">
+                <!-- CONTACT content \ START -->
                 <div class="contact">
                     <h3 class="content__title">contact</h3>
                     <div class="triangle"></div>
@@ -117,7 +123,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- CONTACT content \ END -->
 
+                <!-- LANGUAGE content \ START -->
                 <div class="language">
                     <h3 class="content__title">language</h3>
                     <div class="triangle"></div>
@@ -125,7 +133,9 @@
                         <!-- render at js \ ribbonRating.js -->
                     </div>
                 </div>
+                <!-- LANGUAGE content \ END -->
 
+                <!-- SKILL content \ START -->
                 <div class="skill">
                     <h3 class="content__title">skill</h3>
                     <div class="triangle"></div>
@@ -133,7 +143,9 @@
                         <!-- render at js -->
                     </div>
                 </div>
+                <!-- SKILL content \ END -->
 
+                <!-- HOBBY content \ START -->
                 <div class="hobby">
                     <h3 class="content__title">hobbies</h3>
                     <div class="triangle"></div>
@@ -149,14 +161,32 @@
                         </div>
                     </div>
                 </div>
+                <!-- HOBBY content \ END -->
             </div>
+            <!-- Content at the left | END -->
+
+            <!-- Content at the right \ START -->
             <div class="layout__right">
+                <!-- ACHIEVEMENT content \ START -->
                 <div class="achievement">
+                    <!-- Heading line ⬇ -->
                     <div class="content__title">
                         <span><i class="fas fa-briefcase"></i></span>
                         <h3 class="heading">achievements</h3>
                     </div>
+
+                    <!-- Main content ⬇ -->
                     <div class="main__content">
+                        <div class="achievement__item">
+                            <h3 class="item__title">cty growupwork co ltd vietnam</h3>
+                            <p class="item__date-working">2018 - present</p>
+                            <div class="item__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </div>
+                        </div>
                         <div class="achievement__item">
                             <h3 class="item__title">cty growupwork co ltd vietnam</h3>
                             <p class="item__date-working">2018 - present</p>
@@ -169,13 +199,150 @@
                         </div>
                     </div>
                 </div>
+                <!-- ACHIEVEMENT content \ START -->
+
+                <!-- EDUCATION content \ START -->
+                <div class="education">
+                    <!-- Heading line ⬇ -->
+                    <div class="content__title">
+                        <span><i class="fas fa-graduation-cap"></i></span>
+                        <h3 class="heading">education</h3>
+                    </div>
+
+                    <!-- Main content ⬇ -->
+                    <div class="main__content">
+                        <div class="education__item">
+                            <div class="item__title">
+                                <span class="item__text">
+                                    growupwork university
+                                </span>
+                                <span class="item__date">
+                                    2016
+                                    <!-- <span v-show="item.start_date && item.end_date">
+                                        -
+                                    </span>
+                                    {{ item.end_date }} -->
+                                </span>
+                            </div>
+                            <div class="item__content">
+                                <div class="item__degree">Fresher Developer Level 1</div>
+                            </div>
+                        </div>
+                        <div class="education__item">
+                            <div class="item__title">
+                                <span class="item__text">
+                                    growupwork university
+                                </span>
+                                <span class="item__date">
+                                    2016
+                                    <!-- <span v-show="item.start_date && item.end_date">
+                                        -
+                                    </span>
+                                    {{ item.end_date }} -->
+                                </span>
+                            </div>
+                            <div class="item__content">
+                                <div class="item__degree">Fresher Developer Level 1</div>
+                            </div>
+                        </div>
+                        <div class="education__item">
+                            <div class="item__title">
+                                <span class="item__text">
+                                    growupwork university
+                                </span>
+                                <span class="item__date">
+                                    2016
+                                    <!-- <span v-show="item.start_date && item.end_date">
+                                        -
+                                    </span>
+                                    {{ item.end_date }} -->
+                                </span>
+                            </div>
+                            <div class="item__content">
+                                <div class="item__degree">Fresher Developer Level 1</div>
+                                <div class="item__desc">Description</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- EDUCATION content \ END -->
+
+                <!-- WORK EXPERIENCE content \ START -->
+                <div class="work-experience">
+                    <!-- Heading line ⬇ -->
+                    <div class="content__title">
+                        <span><i class="fas fa-cogs"></i></span>
+                        <h3 class="heading">work experience</h3>
+                    </div>
+
+                    <!-- Main content ⬇ -->
+                    <div class="main__content">
+                        <ul class="work-experience__list">
+                            <li class="work-experience__item">
+                                <div class="item__title">
+                                    <p class="text-primary">
+                                        <strong>company:</strong> pellentesque enim sit amet
+                                    </p>
+                                    <span>
+                                        enim
+                                        <span v-show="item.start_date && item.end_date"> - </span>
+                                        amet
+                                    </span>
+                                </div>
+                                <p>
+                                    <strong>project:</strong>
+                                    pellentesque dignissim
+                                </p>
+                                <p>
+                                    <strong>position:</strong>
+                                    pellentesque (dignissim)
+                                </p>
+                                <p>
+                                    <strong>link:</strong>
+                                    <span class="link">https://growupwork.com</span>
+                                </p>
+                                <p>
+                                    <strong>environment:</strong>
+                                    <span class="env">pellEntesque, dignissim</span>
+                                </p>
+                                <div class="work-experience__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua.
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- WORK EXPERIENCE content \ END -->
             </div>
+            <!-- Content at the right \ END -->
+
+        </div>
+
+        <!-- SVG on bottom -->
+        <div class="svg-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="594.996" height="53.744" viewBox="0 0 594.996 53.744">
+                <g id="Group_2" data-name="Group 2" transform="translate(0 -920.314)">
+                    <path id="Path_10" data-name="Path 10" d="M0,945.3l203.46-24.765v36.441L0,965.007Z"
+                        fill="#ffbe29" />
+                    <path id="Path_11" data-name="Path 11" d="M.439,928.485l191.375,12.471V957.19L.439,964.976Z"
+                        transform="translate(203 -8)" fill="#b5861e" />
+                    <path id="Path_12" data-name="Path 12" d="M-3.159,927.984l163.321-12.671v36.139L-3.159,944.117Z"
+                        transform="translate(398 5)" fill="#ffbe29" />
+                    <path id="Path_13" data-name="Path 13" d="M-5.87,905.582l36.835,20.206V943l-36.8-1.442Z"
+                        transform="translate(564 15)" fill="#b5861e" />
+                    <path id="Path_14" data-name="Path 14"
+                        d="M0,974.04l595,.018V958L394.859,949.15l-191.277,7.816L0,965.036Z" fill="#323651" />
+                </g>
+            </svg>
         </div>
 
     </div>
 
-    <script src="/app/js/ribbonRating.js"></script>
-    <script src="/app/js/skillCircle.js"></script>
+    <script src="/app/js/template/11/ribbonRating.js"></script>
+    <script src="/app/js/template/11/skillCircle.js"></script>
 
 </body>
 

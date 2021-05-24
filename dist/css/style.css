@@ -560,7 +560,7 @@ strong {
   font-size: 14px;
 }
 
-.cv-template11 .svg-style {
+.cv-template11 .svg-top {
   position: relative;
   top: -4px;
   left: 0;
@@ -568,7 +568,20 @@ strong {
   z-index: 1;
 }
 
-.cv-template11 .svg-style svg {
+.cv-template11 .svg-top svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cv-template11 .svg-bottom {
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.cv-template11 .svg-bottom svg {
   width: 100%;
   height: 100%;
 }
@@ -714,15 +727,15 @@ strong {
   display: grid;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
-  position: absolute;
-  top: 22.5rem;
+  position: relative;
+  top: -6.5rem;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
 .cv-template11 .primary__content .layout__left {
-  min-height: 100%;
+  min-height: 110%;
   background-color: #e9e9eb;
   padding-top: 3.5rem;
   padding-left: 1.5rem;
@@ -987,20 +1000,134 @@ strong {
   padding-right: 2.5rem;
 }
 
-.cv-template11 .primary__content .layout__right .achievement .content__title span {
+.cv-template11 .primary__content .layout__right .achievement,
+.cv-template11 .primary__content .layout__right .education,
+.cv-template11 .primary__content .layout__right .work-experience {
+  margin-bottom: 1.125rem;
+}
+
+.cv-template11 .primary__content .layout__right .achievement .content__title,
+.cv-template11 .primary__content .layout__right .education .content__title,
+.cv-template11 .primary__content .layout__right .work-experience .content__title {
+  margin-bottom: 12px;
+}
+
+.cv-template11 .primary__content .layout__right .achievement .content__title span,
+.cv-template11 .primary__content .layout__right .education .content__title span,
+.cv-template11 .primary__content .layout__right .work-experience .content__title span {
   display: block;
   margin-bottom: 0.75rem;
 }
 
-.cv-template11 .primary__content .layout__right .achievement .content__title span i {
+.cv-template11 .primary__content .layout__right .achievement .content__title span i,
+.cv-template11 .primary__content .layout__right .education .content__title span i,
+.cv-template11 .primary__content .layout__right .work-experience .content__title span i {
   color: #3a4245;
   font-size: 2.625rem;
 }
 
-.cv-template11 .primary__content .layout__right .achievement .content__title .heading {
+.cv-template11 .primary__content .layout__right .achievement .content__title .heading,
+.cv-template11 .primary__content .layout__right .education .content__title .heading,
+.cv-template11 .primary__content .layout__right .work-experience .content__title .heading {
   font-weight: 500;
   text-transform: capitalize;
   font-size: 1.75rem;
   color: #3a4245;
+}
+
+.cv-template11 .primary__content .layout__right .achievement .main__content .achievement__item {
+  font-size: 0.875rem;
+}
+
+.cv-template11 .primary__content .layout__right .achievement .main__content .achievement__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.cv-template11 .primary__content .layout__right .achievement .main__content .achievement__item .item__title {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cv-template11 .primary__content .layout__right .achievement .main__content .achievement__item .item__date-working {
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.cv-template11 .primary__content .layout__right .achievement .main__content .achievement__item .item__desc {
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.25rem;
+}
+
+.cv-template11 .primary__content .layout__right .education .main__content .education__item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.cv-template11 .primary__content .layout__right .education .main__content .education__item .item__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cv-template11 .primary__content .layout__right .education .main__content .education__item .item__title .item__text,
+.cv-template11 .primary__content .layout__right .education .main__content .education__item .item__title .item__date {
+  font-style: italic;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cv-template11 .primary__content .layout__right .education .main__content .education__item .item__content {
+  font-size: 0.875rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item {
+  font-style: italic;
+  line-height: 1.25rem;
+}
+
+.cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item .item__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item .item__title span {
+  text-transform: capitalize;
+}
+
+.cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item p {
+  text-transform: uppercase;
+}
+
+.cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item .link,
+.cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item .env {
+  text-transform: none;
+}
+
+.cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item .work-experience__desc {
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

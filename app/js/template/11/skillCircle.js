@@ -3,6 +3,7 @@ const skillRatings = [
 	{ id: "html", name: "HTML", level: 4.7, color: "#ffbe29" },
 	{ id: "ps", name: "Ps", level: 2.5, color: "#f4543a" },
 	{ id: "ai", name: "Ai", level: 3, color: "#ffbe29" },
+	{ id: "xd", name: "AdobeXD", level: 4, color: "#ffbe29" },
 ];
 
 const total = 5;
@@ -32,7 +33,7 @@ function getPercent() {
 		const percentage = (skillRatings[rating].level / total) * 100;
 
 		// Round to nearest 10
-		const percentageRounded = `${Math.round(440 - (160 * percentage) / 100)}`;
+		const percentageRounded = `${Math.round(440 - (150 * percentage) / 100)}`;
 
 		// Set heigh of ribbon-outer to percentage
 		document

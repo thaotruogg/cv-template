@@ -3,9 +3,21 @@
 	position: relative;
 	font-size: 14px;
 
-	.svg-style {
+	.svg-top {
 		position: relative;
 		top: -4px;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.svg-bottom {
+		position: absolute;
+		bottom: -0.25rem;
 		left: 0;
 		width: 100%;
 		z-index: 1;
@@ -151,14 +163,14 @@
 	.primary__content {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
-		position: absolute;
-		top: 22.5rem;
+		position: relative;
+		top: -6.5rem;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		.layout {
 			&__left {
-				min-height: 100%;
+				min-height: 110%;
 				background-color: $light-gray-tml11;
 				padding-top: 3.5rem;
 				padding-left: 1.5rem;
@@ -370,8 +382,12 @@
 				padding-left: 2.5rem;
 				padding-right: 2.5rem;
 
-				.achievement {
+				.achievement,
+				.education,
+				.work-experience {
+					margin-bottom: 1.125rem;
 					.content__title {
+						margin-bottom: 12px;
 						span {
 							display: block;
 							margin-bottom: 0.75rem;
@@ -385,6 +401,97 @@
 							text-transform: capitalize;
 							font-size: 1.75rem;
 							color: $gray-tml11;
+						}
+					}
+				}
+
+				.achievement {
+					.main__content {
+						.achievement__item {
+							font-size: 0.875rem;
+							&:not(:last-child) {
+								margin-bottom: 1rem;
+							}
+							.item__title {
+								font-weight: 500;
+								text-transform: uppercase;
+							}
+							.item__date-working {
+								font-weight: 300;
+								font-style: italic;
+								text-transform: uppercase;
+								margin-bottom: 4px;
+							}
+							.item__desc {
+								font-weight: 300;
+								font-style: italic;
+								line-height: 1.25rem;
+							}
+						}
+					}
+				}
+
+				.education {
+					.main__content {
+						.education__item {
+							&:not(:last-child) {
+								margin-bottom: 0.5rem;
+							}
+							.item__title {
+								display: flex;
+								flex-direction: row;
+								justify-content: space-between;
+
+								.item__text,
+								.item__date {
+									font-style: italic;
+									font-weight: 500;
+									text-transform: uppercase;
+								}
+							}
+							.item__content {
+								font-size: 0.875rem;
+								font-style: italic;
+								font-weight: 300;
+							}
+						}
+					}
+				}
+
+				.work-experience {
+					.main__content {
+						.work-experience__list {
+							.work-experience__item {
+								font-style: italic;
+								line-height: 1.25rem;
+
+								&:not(:last-child) {
+									margin-bottom: 12px;
+								}
+
+								.item__title {
+									display: flex;
+									flex-direction: row;
+									justify-content: space-between;
+									text-transform: uppercase;
+									span {
+										text-transform: capitalize;
+									}
+								}
+
+								p {
+									text-transform: uppercase;
+								}
+
+								.link,
+								.env {
+									text-transform: none;
+								}
+
+								.work-experience__desc {
+									font-weight: 300;
+								}
+							}
 						}
 					}
 				}
