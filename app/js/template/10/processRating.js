@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", getRatingsSkill);
 
 function renderHtmlLang() {
 	for (let rating in langRatings) {
-		let html = `<li class="process__item" id="${langRatings[rating].id}">
+		let html = `<li class="process__item" id="id-${langRatings[rating].id}">
                                 <p class="item__name">${langRatings[rating].name}</p>
                                 <div class="process-outer">
                                     <div class="process-inner"></div>
@@ -33,7 +33,7 @@ function renderHtmlLang() {
 
 function renderHtmlSkill() {
 	for (let rating in skillRatings) {
-		let html = `<li class="process__item" id="${skillRatings[rating].id}">
+		let html = `<li class="process__item" id="id-${skillRatings[rating].id}">
                                 <p class="item__name">${skillRatings[rating].name}</p>
                                 <div class="process-outer">
                                     <div class="process-inner"></div>
@@ -53,7 +53,7 @@ function getRatingsLang() {
 
 		// Set width of star-inner to percentage
 		document.querySelector(
-			`#${langRatings[rating].id} .process-inner`
+			`#id-${langRatings[rating].id} .process-inner`
 		).style.width = starPercentageRounded;
 	}
 }
@@ -67,7 +67,7 @@ function getRatingsSkill() {
 
 		// Set width of star-inner to percentage
 		document.querySelector(
-			`#${skillRatings[rating].id} .process-inner`
+			`#id-${skillRatings[rating].id} .process-inner`
 		).style.width = starPercentageRounded;
 	}
 }

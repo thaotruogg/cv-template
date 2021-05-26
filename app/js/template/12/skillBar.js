@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", getLevelSkills);
 
 function renderSkillHtml() {
 	for (let skillLv in skillLevels) {
-		let html = `<div class="skill__item" id="${skillLevels[skillLv].id}">
+		let html = `<div class="skill__item" id="id-${skillLevels[skillLv].id}">
 							<span class="item__title">${skillLevels[skillLv].name}</span>
 							<div class="skill-bar__outer">
 								<div class="skill-bar__inner"></div>
@@ -32,7 +32,7 @@ function getLevelSkills() {
 
 		// Set width of star-inner to percentage
 		document.querySelector(
-			`#${skillLevels[skillLv].id} .skill-bar__inner`
+			`#id-${skillLevels[skillLv].id} .skill-bar__inner`
 		).style.width = skillPercentageRounded;
 	}
 }

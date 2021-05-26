@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", getRatings);
 
 function renderHtml() {
 	for (let rating in ratings) {
-		let html = `<div class="language__item break-all" id="${ratings[rating].id}">
+		let html = `<div class="language__item break-all" id="id-${ratings[rating].id}">
 						<span class="language__title"> ${ratings[rating].name} </span>
 						<div class="star-outer">
 							<div class="star-inner"></div>
@@ -30,7 +30,8 @@ function getRatings() {
 		const starPercentageRounded = `${Math.round(starPercentage / 10) * 10}%`;
 
 		// Set width of star-inner to percentage
-		document.querySelector(`#${ratings[rating].id} .star-inner`).style.width =
-			starPercentageRounded;
+		document.querySelector(
+			`#id-${ratings[rating].id} .star-inner`
+		).style.width = starPercentageRounded;
 	}
 }

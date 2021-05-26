@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", getPercent);
 
 function renderHtml() {
 	for (let rating in ratings) {
-		let html = `<div class="language__item" id="${ratings[rating].id}">
+		let html = `<div class="language__item" id="id-${ratings[rating].id}">
                             <span class="item__name">${ratings[rating].name}</span>
                             <div class="ribbon-outer">
                                 <div class="ribbon-inner">
@@ -34,21 +34,23 @@ function getPercent() {
 
 		// Set heigh of ribbon-outer to percentage
 		document.querySelector(
-			`#${ratings[rating].id} .ribbon-outer`
+			`#id-${ratings[rating].id} .ribbon-outer`
 		).style.height = percentageRounded;
 
 		document.querySelector(
-			`#${ratings[rating].id} .percent`
+			`#id-${ratings[rating].id} .percent`
 		).innerHTML = `${percentage}%`;
 
 		document
-			.querySelector(`#${ratings[rating].id} .ribbon-outer`)
+			.querySelector(`#id-${ratings[rating].id} .ribbon-outer`)
 			.style.setProperty("border-color", `${ratings[rating].color}`);
 		document
-			.querySelector(`#${ratings[rating].id} .ribbon-inner`)
+			.querySelector(`#id-${ratings[rating].id} .ribbon-inner`)
 			.style.setProperty("background-color", `${ratings[rating].color}`);
 		document
-			.querySelector(`#${ratings[rating].id} .ribbon-outer .triangle-up-outer`)
+			.querySelector(
+				`#id-${ratings[rating].id} .ribbon-outer .triangle-up-outer`
+			)
 			.style.setProperty("border-bottom-color", `${ratings[rating].color}`);
 	}
 }

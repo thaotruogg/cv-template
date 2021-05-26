@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", getPercent);
 
 function renderHtml() {
 	for (let rating in skillRatings) {
-		let html = `<div class="skill__item" id="${skillRatings[rating].id}">
+		let html = `<div class="skill__item" id="id-${skillRatings[rating].id}">
                             <div class="percent">
                                 <svg>
                                     <circle cx="24" cy="24" r="24"></circle>
@@ -37,17 +37,17 @@ function getPercent() {
 
 		// Set heigh of ribbon-outer to percentage
 		document
-			.querySelector(`#${skillRatings[rating].id} circle`)
+			.querySelector(`#id-${skillRatings[rating].id} circle`)
 			.style.setProperty("stroke-dashoffset", `${percentageRounded}`);
 
 		// Set percent text
 		document.querySelector(
-			`#${skillRatings[rating].id} .text__percent`
+			`#id-${skillRatings[rating].id} .text__percent`
 		).innerHTML = `${percentage}%`;
 
 		// other style
 		document
-			.querySelector(`#${skillRatings[rating].id} .inside-circle`)
+			.querySelector(`#id-${skillRatings[rating].id} .inside-circle`)
 			.style.setProperty("fill", `${skillRatings[rating].color}`);
 	}
 }
