@@ -8,6 +8,8 @@
     <title>Template 10</title>
     <link rel="stylesheet" href="/dist/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -33,7 +35,9 @@
         <!-- Profile ⬇ -->
         <div class="profile">
             <div class="profile__name">
-
+                <span class="text__hello">Xin chào! Tôi là</span>
+                <p class="text__name">nguyen tran khanh minh</p>
+                <p class="text__position">artist & video composer</p>
             </div>
             <div class="profile__main">
                 <div class="profile__top-content">
@@ -55,11 +59,287 @@
                     </div>
                 </div>
                 <div class="profile__bottom-content">
-                    bottom
+                    <div class="contact">
+                        <div class="extra__item" v-show="data.profile.phone">
+                            <p class="extra__title">
+                                <i class="fas fa-phone"></i>
+                            </p>
+                            <p class="extra__content">
+                                <span class="child">+84 9xx xxx xx</span>
+                                <span class="child">+84 9xx xxx xx</span>
+                            </p>
+                        </div>
+                        <div class="extra__item" v-show="data.profile.phone">
+                            <p class="extra__title">
+                                <i class="fas fa-envelope"></i>
+                            </p>
+                            <p class="extra__content">eu, facilisis, sed</p>
+                        </div>
+                        <div class="extra__item" v-show="data.profile.phone">
+                            <p class="extra__title">
+                                <i class="fas fa-globe-asia"></i>
+                            </p>
+                            <p class="extra__content">www.growupwork.com</p>
+                        </div>
+                        <div class="extra__item" v-show="data.profile.phone">
+                            <p class="extra__title">
+                                <i class="fas fa-home"></i>
+                            </p>
+                            <p class="extra__content">eu, facilisis, sed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content ⬇ -->
+        <div class="main-primary">
+            <div class="left-layout">
+                <!-- Language ⬇ -->
+                <div class="language">
+                    <!-- Heading line ⬇ -->
+                    <div class="content__title">
+                        <h3 class="heading">language</h3>
+                    </div>
+
+                    <div class="main__content">
+                        <ul class="process__list" id="lang-level">
+                            <!-- render at js -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skills ⬇ -->
+                <div class="skills">
+                    <!-- Heading line ⬇ -->
+                    <div class="content__title">
+                        <h3 class="heading">skills</h3>
+                    </div>
+
+                    <div class="main__content">
+                        <ul class="process__list" id="skill-level">
+                            <!-- render at js -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education ⬇ -->
+                <div class="education">
+                    <!-- Heading line ⬇ -->
+                    <div class="content__title">
+                        <h3 class="heading">education</h3>
+                    </div>
+
+                    <div class="main__content">
+                        <ul class="education__list" id="skill-level">
+                            <li class="education__item">
+                                <div class="item__title">
+                                    <span class="item__text">
+                                        growupwork university
+                                    </span>
+                                    <span class="item__date">
+                                        2016
+                                        <!-- <span v-show="item.start_date && item.end_date">
+                                        -
+                                    </span>
+                                    {{ item.end_date }} -->
+                                    </span>
+                                </div>
+                                <div class="item__content">
+                                    <div class="item__degree">Fresher Developer Level 1</div>
+                                </div>
+                            </li>
+                            <li class="education__item">
+                                <div class="item__title">
+                                    <span class="item__text">
+                                        Đai học khoa hoc tự nhiên TPHCM
+                                    </span>
+                                    <span class="item__date">
+                                        2016
+                                        <!-- <span v-show="item.start_date && item.end_date">
+                                        -
+                                    </span>
+                                    {{ item.end_date }} -->
+                                    </span>
+                                </div>
+                                <div class="item__content">
+                                    <div class="item__degree">Fresher Developer Level 1</div>
+                                    <div class="item__desc">Description</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hobby ⬇ -->
+                <div class="hobby">
+                    <!-- Heading line ⬇ -->
+                    <div class="content__title">
+                        <h3 class="heading">Hobbies</h3>
+                    </div>
+
+                    <div class="main__content">
+                        <ul class="hobbies__list">
+                            <li class="hobby__item">
+                                <span><i class="fas fa-swimmer"></i></span>
+                            </li>
+                            <li class="hobby__item">
+                                <span><i class="far fa-futbol"></i></span>
+                            </li>
+                            <li class="hobby__item">
+                                <span><i class="fas fa-map-marked-alt"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-layout">
+                <!-- Achievements ⬇ -->
+                <div class="achievement">
+                    <!-- Heading line ⬇ -->
+                    <div class="content__title">
+                        <span><i class="fas fa-briefcase"></i></span>
+                        <h3 class="heading">achievements</h3>
+                    </div>
+
+                    <div class="main__content">
+                        <div class="item__content">
+                            <div class="item__title">
+                                <p class="title-name">cty growupwork co ltd vietnam</p>
+                                <span class="location-name">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Tokyo - Japan
+                                </span>
+                            </div>
+                            <p class="item__date">2018 - present</p>
+                            <div class="item__decs">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </div>
+                            <div class="date-timeline">
+                                <span>2018</span>
+                                <span>present</span>
+                            </div>
+                        </div>
+                        <div class="item__content">
+                            <div class="item__title">
+                                <p class="title-name">cty growupwork co ltd vietnam</p>
+                                <span class="location-name">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Tokyo - Japan
+                                </span>
+                            </div>
+                            <p class="item__date">2018 - present</p>
+                            <div class="item__decs">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </div>
+                            <div class="date-timeline">
+                                <span>2018</span>
+                                <span>present</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work experience -->
+                <div class="work-experience">
+                    <!-- Heading line ⬇ -->
+                    <div class="content__title">
+                        <span><i class="fas fa-cogs"></i></span>
+                        <h3 class="heading">work experience</h3>
+                    </div>
+
+                    <div class="main__content">
+                        <ul class="work-experience__list">
+                            <li class="work-experience__item">
+                                <div class="item__title">
+                                    <p class="text-primary">
+                                        <strong>company:</strong> pellentesque enim sit amet
+                                    </p>
+                                    <span>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Ho Chi Minh
+                                    </span>
+                                </div>
+                                <p>
+                                    <strong>project:</strong>
+                                    pellentesque dignissim
+                                </p>
+                                <p>
+                                    <strong>position:</strong>
+                                    pellentesque (dignissim)
+                                </p>
+                                <p>
+                                    <strong>link:</strong>
+                                    <span class="link">https://growupwork.com</span>
+                                </p>
+                                <p>
+                                    <strong>environment:</strong>
+                                    <span class="env">pellEntesque, dignissim</span>
+                                </p>
+                                <div class="work-experience__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua.
+                                </div>
+                                <div class="date-timeline">
+                                    <span>2018</span>
+                                    <span>present</span>
+                                </div>
+                            </li>
+
+                            <li class="work-experience__item">
+                                <div class="item__title">
+                                    <p class="text-primary">
+                                        <strong>company:</strong> pellentesque enim sit amet
+                                    </p>
+                                    <span>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Ho Chi Minh
+                                    </span>
+                                </div>
+                                <p>
+                                    <strong>project:</strong>
+                                    pellentesque dignissim
+                                </p>
+                                <p>
+                                    <strong>position:</strong>
+                                    pellentesque (dignissim)
+                                </p>
+                                <p>
+                                    <strong>link:</strong>
+                                    <span class="link">https://growupwork.com</span>
+                                </p>
+                                <p>
+                                    <strong>environment:</strong>
+                                    <span class="env">pellEntesque, dignissim</span>
+                                </p>
+                                <div class="work-experience__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua.
+                                </div>
+                                <div class="date-timeline">
+                                    <span>2018</span>
+                                    <span>present</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="/app/js/template/10/processRating.js"></script>
 </body>
 
 </html>
