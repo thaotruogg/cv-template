@@ -384,6 +384,12 @@
 								text-transform: uppercase;
 								font-weight: 500;
 							}
+							span {
+								display: flex;
+								span {
+									margin: 0 3px;
+								}
+							}
 						}
 
 						p {

@@ -479,6 +479,10 @@
 									text-transform: uppercase;
 									span {
 										text-transform: capitalize;
+										display: flex;
+										span {
+											margin: 0 3px;
+										}
 									}
 								}
 
