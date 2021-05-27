@@ -1,9 +1,9 @@
 import { langData, skillData } from "./value.js";
-import { renderHtml, getRatings } from "/app/js/star-rating/starRating.js";
+import { renderHtml, getRatings } from "../../star-rating/starRating.js";
 import {
 	renderSkillHtml,
 	getLevelSkills,
-} from "/app/js/bar-process-with-dot/barProcessWithDot.js";
+} from "../../bar-process-with-dot/barProcessWithDot.js";
 
 document.addEventListener(
 	"DOMContentLoaded",

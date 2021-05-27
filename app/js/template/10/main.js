@@ -1,4 +1,4 @@
-import { renderHtml, getRatings } from "/app/js/bar-process/barProcess.js";
+import { renderHtml, getRatings } from "../../bar-process/barProcess.js";
 import { langRatings, skillRatings } from "./value.js";
 
 document.addEventListener(

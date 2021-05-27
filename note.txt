@@ -1,0 +1,6 @@
+*** Error JS when open .html file on the local computer:
+    Cross origin requests are only supported for protocol schemes: http, data, chrome-extension, edge, https, chrome-untrusted.
+
+*** Recommend use Live Server extension on VSCode or any localhost to open .html file help JS run smoothly.
+
+*** Script manual: sass ./app/sass/style.scss ./dist/css/style.css --watch

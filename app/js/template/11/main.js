@@ -1,13 +1,10 @@
 import { langRatings, skillRatings } from "./value.js";
-import {
-	renderHtml,
-	getPercent,
-} from "/app/js/circle-process/circleProcess.js";
+import { renderHtml, getPercent } from "../../circle-process/circleProcess.js";
 
 import {
 	renderHtml as langHTML,
 	getPercent as langGetPercent,
-} from "/app/js/ribbon-process/ribbonProcess.js";
+} from "../../ribbon-process/ribbonProcess.js";
 
 document.addEventListener(
 	"DOMContentLoaded",
