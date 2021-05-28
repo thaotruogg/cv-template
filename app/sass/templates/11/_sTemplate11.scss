@@ -488,6 +488,10 @@
 
 								p {
 									text-transform: uppercase;
+									display: flex;
+									strong {
+										margin-right: 3px;
+									}
 								}
 
 								.link,

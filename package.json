@@ -1,0 +1,25 @@
+{
+	"name": "cv-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"sass-watch": "sass ./app/sass/style.scss ./dist/css/style.css --watch",
+		"sass-build": "sass ./app/sass/style.scss ./dist/css/style.css",
+		"server": "http-server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thaotruogg/cv-template.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/thaotruogg/cv-template/issues"
+	},
+	"homepage": "https://github.com/thaotruogg/cv-template#readme",
+	"devDependencies": {
+		"http-server": "^0.12.3",
+		"sass": "^1.34.0"
+	}
+}

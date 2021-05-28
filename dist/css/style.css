@@ -891,6 +891,10 @@ span {
 }
 .cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item p {
   text-transform: uppercase;
+  display: flex;
+}
+.cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item p strong {
+  margin-right: 3px;
 }
 .cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item .link,
 .cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item .env {
