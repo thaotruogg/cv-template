@@ -2,5 +2,11 @@
     Cross origin requests are only supported for protocol schemes: http, data, chrome-extension, edge, https, chrome-untrusted.
 
 *** Recommend use Live Server extension on VSCode or any localhost to open .html file help JS run smoothly.
+    Option 2: Using http-server
+        + npm install http-server -g
+        + use "Cmder" or "Node.js Command prompt"
+        + cd to folder and run:
+            \_> http-server
+        + follow the url.
 
 *** Script manual: sass ./app/sass/style.scss ./dist/css/style.css --watch
