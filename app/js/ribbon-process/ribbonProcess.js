@@ -7,8 +7,8 @@ export function renderHtml(value, idElement) {
                             <div class="ribbon-outer">
                                 <div class="ribbon-inner">
                                     <span class="percent">65%</span>
-                                </div>
-                                <div class="triangle-up-outer"></div>
+								</div>
+								<div class="triangle-up-outer"></div>
                             </div>
                         </div>`;
 
@@ -20,13 +20,13 @@ export function getPercent(value) {
 	for (let rating in value) {
 		const percentage = (value[rating].level / starTotal) * 100;
 
-		// Round to nearest 10
-		const percentageRounded = `${Math.round(percentage / 10) * 10}%`;
-
 		// Set heigh of ribbon-outer to percentage
 		document.querySelector(
 			`#id-${value[rating].id} .ribbon-outer`
-		).style.height = percentageRounded;
+		).style.height = `${percentage}px`;
+		document.querySelector(
+			`#id-${value[rating].id} .ribbon-inner`
+		).style.height = `${percentage - 8}px`;
 
 		document.querySelector(
 			`#id-${value[rating].id} .percent`

@@ -7,7 +7,7 @@ export const skillRatings = [
 ];
 
 export const langRatings = [
-	{ id: "jp", name: "Japanese", level: 2.5, color: "#323651" },
+	{ id: "jp", name: "Japanese", level: 4, color: "#323651" },
 	{ id: "en", name: "English", level: 3, color: "#f4543a" },
 	{ id: "vn", name: "Vietnamese", level: 4.7, color: "#FFBE29" },
 ];

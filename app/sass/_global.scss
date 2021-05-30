@@ -1,3 +1,5 @@
+@use "./abstracts/colors";
+
 html,
 body {
 	width: 100%;
@@ -33,4 +35,8 @@ strong {
 
 span {
 	display: block;
+}
+
+.none-color {
+	color: colors.$black;
 }

@@ -3,10 +3,7 @@
 
 *** Recommend use Live Server extension on VSCode or any localhost to open .html file help JS run smoothly.
     Option 2: Using http-server
-        + npm install http-server -g
-        + use "Cmder" or "Node.js Command prompt"
+        + npm install
         + cd to folder and run:
-            \_> http-server
+            \_> npm run server
         + follow the url.
-
-*** Script manual: sass ./app/sass/style.scss ./dist/css/style.css --watch

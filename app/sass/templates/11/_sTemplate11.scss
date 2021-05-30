@@ -231,27 +231,28 @@
 								.triangle-up-outer {
 									position: absolute;
 									bottom: 0;
-									left: -2px;
+									left: -3px;
 									right: 0;
+									z-index: 1;
 									width: 0;
 									height: 0;
-									border-left: 1.4375rem solid transparent;
-									border-right: 1.4375rem solid transparent;
-									border-bottom: 0.6875rem solid $red-tml11;
-									z-index: 1;
+									border-style: solid;
+									border-width: 0 24px 8px 24px;
+									border-color: transparent transparent $red-tml11 transparent;
 								}
 								&::before {
 									content: "";
 									position: absolute;
 									bottom: -2px;
-									left: -2px;
+									left: -3px;
 									right: 0;
+									z-index: 2;
 									width: 0;
 									height: 0;
-									border-left: 1.4375rem solid transparent;
-									border-right: 1.4375rem solid transparent;
-									border-bottom: 0.6875rem solid $light-gray-tml11;
-									z-index: 2;
+									border-style: solid;
+									border-width: 0 24px 8px 24px;
+									border-color: transparent transparent $light-gray-tml11
+										transparent;
 								}
 							}
 							.ribbon-inner {
@@ -268,9 +269,10 @@
 									bottom: 0;
 									width: 0;
 									height: 0;
-									border-left: 1.1875rem solid transparent;
-									border-right: 1.1875rem solid transparent;
-									border-bottom: 0.5625rem solid $light-gray-tml11;
+									border-style: solid;
+									border-width: 0 19px 6px 19px;
+									border-color: transparent transparent $light-gray-tml11
+										transparent;
 								}
 							}
 

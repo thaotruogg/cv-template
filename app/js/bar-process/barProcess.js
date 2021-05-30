@@ -24,5 +24,12 @@ export function getRatings(value) {
 		document.querySelector(
 			`#id-${value[rating].id} .process-inner`
 		).style.width = starPercentageRounded;
+
+		// other style
+		if (value[rating].color) {
+			document
+				.querySelector(`#id-${value[rating].id} .process-inner`)
+				.style.setProperty("background-color", `${value[rating].color}`);
+		}
 	}
 }
