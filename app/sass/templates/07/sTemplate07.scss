@@ -1,6 +1,6 @@
 .cv-template07 {
-	border-top: 6px solid $dark-gray-tml07;
-	border-bottom: 6px solid $dark-gray-tml07;
+	border-top: 10px solid $dark-gray-tml07;
+	border-bottom: 10px solid $dark-gray-tml07;
 	display: flex;
 	flex-direction: column;
 	font-size: 14px;
@@ -47,7 +47,7 @@
 					margin-top: 2.375rem;
 					margin-bottom: 3rem;
 					width: 100%;
-					padding: 0 1.75rem;
+					padding: 0 1.5rem;
 					.contact__item {
 						display: flex;
 						align-items: center;
@@ -60,6 +60,8 @@
 						.item-phone,
 						.item-website {
 							width: 1.625rem;
+							min-width: 1.625rem;
+							max-height: 3rem;
 							height: 1.625rem;
 							background-color: $orange;
 							display: flex;
@@ -84,6 +86,14 @@
 								right: 0;
 							}
 						}
+						.item__name {
+							font-weight: 500;
+							line-break: loose;
+						}
+
+						.item__name.mail {
+							line-break: anywhere;
+						}
 
 						.item-location {
 							background-color: $teal-tml07;
@@ -103,18 +113,16 @@
 								border-color: transparent $red-tml07 transparent transparent;
 							}
 						}
-
-						.item__name {
-							font-weight: 500;
-						}
 					}
 				}
 
 				.social-network {
+					width: 13.125rem;
 					text-transform: uppercase;
 					border-top: 1px solid $black;
 					border-bottom: 1px solid $black;
-					width: max-content;
+					word-break: break-all;
+					max-width: max-content;
 					padding: 0.25rem 0;
 					transform: skewX(-20deg) rotate(-15deg);
 					margin-bottom: 3.25rem;
@@ -165,6 +173,8 @@
 					border-bottom: 2px solid $black;
 					width: max-content;
 					margin: 0.5rem 0;
+					word-break: break-all;
+					width: 15rem;
 				}
 
 				.position__list {
@@ -241,8 +251,8 @@
 
 			.dot {
 				.dot-2 {
-					width: 104px;
-					bottom: -72px;
+					width: 106px;
+					bottom: -70px;
 					right: -9px;
 				}
 			}
@@ -272,17 +282,25 @@
 							.item__title {
 								display: flex;
 								justify-content: space-between;
-								align-items: center;
+								align-items: flex-start;
 
 								.title-name {
 									font-weight: 500;
+									font-size: 0.8125rem;
 									text-transform: uppercase;
+									padding-top: 0.125rem;
 								}
 								.title-date {
 									color: $white;
 									font-weight: 500;
 									font-size: 1rem;
+									text-align: right;
 								}
+							}
+
+							.item__degree,
+							.item__desc {
+								font-size: 0.75rem;
 							}
 						}
 					}
@@ -294,7 +312,7 @@
 							}
 							.item__name {
 								text-transform: uppercase;
-								font-weight: 500;
+								font-weight: 700;
 								margin-bottom: 4px;
 								font-size: 0.8125rem;
 							}
@@ -316,8 +334,8 @@
 
 		.row-2 {
 			background-color: $teal-tml07;
-			margin-left: 3px;
-			margin-right: 3px;
+			margin-left: 0.1875rem;
+			margin-right: 0.1875rem;
 			position: relative;
 
 			&::before {
@@ -335,7 +353,7 @@
 				width: 0;
 				height: 0;
 				border-style: solid;
-				border-width: 0 0 68px 274px;
+				border-width: 0 0 68px 273px;
 				border-color: transparent transparent $teal-tml07 transparent;
 				position: absolute;
 				top: -10.5rem;
@@ -362,7 +380,6 @@
 								text-transform: uppercase;
 								color: $white;
 								font-style: italic;
-								font-size: 1rem;
 								margin-bottom: 0.5rem;
 								.name {
 									font-weight: 500;
@@ -373,7 +390,7 @@
 							}
 							.item__desc {
 								font-weight: 300;
-								font-size: 0.85rem;
+								font-size: 0.8125rem;
 								line-height: 1.4;
 								font-style: italic;
 							}
@@ -391,9 +408,9 @@
 
 			.dot {
 				.dot-1 {
-					width: 12rem;
-					bottom: -4.5rem;
-					left: -0.25rem;
+					width: 194px;
+					bottom: -71px;
+					left: -6px;
 				}
 				.dot-2 {
 					width: 6.5rem;
@@ -406,6 +423,7 @@
 		.row-3 {
 			background-color: $red-tml07;
 			margin-left: 3px;
+			padding-bottom: 3rem;
 			position: relative;
 
 			&::before {
@@ -424,6 +442,12 @@
 				padding-left: 1.625rem;
 				padding-right: 1.625rem;
 
+				.title__content {
+					span {
+						right: 0;
+					}
+				}
+
 				.main__content {
 					.work-experience__list {
 						.work-experience__item {
@@ -433,7 +457,7 @@
 								margin-bottom: 0.75rem;
 							}
 							.item__date {
-								font-size: 1.125rem;
+								font-size: 1rem;
 								color: $white;
 								font-weight: 500;
 								margin-bottom: 0.5rem;
@@ -441,14 +465,14 @@
 							p {
 								display: flex;
 								margin-bottom: 0.25rem;
-								font-size: 0.8rem;
+								font-size: 0.8125rem;
 								strong {
 									margin-right: 0.1875rem;
 									text-transform: uppercase;
 								}
 							}
 							.item__desc {
-								font-size: 0.85rem;
+								font-size: 0.8125rem;
 								line-height: 1.4;
 							}
 							.item__name,
@@ -479,7 +503,7 @@
 			.dot {
 				.dot-1 {
 					width: 280px;
-					bottom: -60px;
+					bottom: -62px;
 					left: -6px;
 				}
 				.dot-2 {
@@ -536,9 +560,9 @@
 
 		.dot {
 			.dot-1 {
-				width: 188px;
-				height: 1px;
-				border-top: 4px dotted $gray-tml07;
+				width: 186px;
+				height: 4px;
+				border-top: 4px dashed $gray-tml07;
 				position: absolute;
 				bottom: -68px;
 				left: 0;
@@ -547,9 +571,9 @@
 			.dot-2 {
 				width: 96px;
 				height: 1px;
-				border-top: 4px dotted $gray-tml07;
+				border-top: 4px dashed $gray-tml07;
 				position: absolute;
-				bottom: -71px;
+				bottom: -69px;
 				right: -6px;
 				transform: rotate(28deg);
 			}
@@ -644,7 +668,7 @@
 										fill: none;
 										stroke: $gray-tml07;
 										stroke-width: 10;
-										stroke-linecap: round;
+										stroke-linecap: butt;
 										transform: translate(0.3125rem, 0.3125rem);
 										stroke-dasharray: 440;
 									}
@@ -684,7 +708,8 @@
 		.hobby {
 			display: flex;
 			justify-content: center;
-			margin: 2rem 0;
+			align-items: center;
+			margin: 0.875rem 0;
 			.title__content {
 				color: $teal-tml07;
 				font-size: 2rem;
@@ -709,7 +734,7 @@
 							text-transform: uppercase;
 							font-size: 1rem;
 							margin-top: 0.5rem;
-							font-weight: 500;
+							font-weight: 700;
 						}
 					}
 				}

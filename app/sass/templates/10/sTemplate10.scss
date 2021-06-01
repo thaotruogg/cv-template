@@ -1,6 +1,6 @@
 .cv-template10 {
 	position: relative;
-	font-size: 14px;
+	font-size: 13px;
 	background-color: $lighter-gray;
 	display: flex;
 	flex-direction: column;
@@ -109,8 +109,8 @@
 					.profile__desc {
 						font-style: italic;
 						font-weight: 300;
-						line-height: 1.125rem;
-						font-size: 16px;
+						line-height: 1.4;
+						font-size: 12px;
 					}
 				}
 			}
@@ -123,7 +123,7 @@
 					display: flex;
 					flex-direction: row;
 					// justify-content: ;
-					font-size: 12px;
+					font-size: 11px;
 					padding: 12px 0;
 					margin: 0 20px;
 
@@ -141,7 +141,7 @@
 							background-color: $dark-gray-tml10;
 							margin-right: 0.5rem;
 							border-radius: 100%;
-							width: 2.25rem;
+							min-width: 2.25rem;
 							height: 2.25rem;
 							display: flex;
 							justify-content: center;
@@ -150,6 +150,21 @@
 						.extra__content {
 							display: flex;
 							flex-direction: column;
+							min-width: 76px;
+							line-break: anywhere;
+						}
+
+						.phone-width {
+							min-width: 75px;
+						}
+						.address-width {
+							min-width: 198px;
+						}
+						.email-width {
+							min-width: 100px;
+						}
+						.weblink-width {
+							min-width: 130px;
 						}
 					}
 				}
@@ -232,10 +247,15 @@
 								display: flex;
 								flex-direction: row;
 								justify-content: space-between;
+								align-items: flex-start;
 								font-weight: 500;
 								margin-bottom: 0.25rem;
 								.item__text {
 									text-transform: uppercase;
+									margin-right: 0.5rem;
+								}
+								.item__date {
+									text-align: right;
 								}
 							}
 							.item__content {
@@ -284,7 +304,7 @@
 						color: $white;
 						font-weight: 500;
 						margin-bottom: 4px;
-						font-size: 12px;
+						font-size: 11px;
 					}
 					.process-outer {
 						width: 100%;
@@ -346,6 +366,7 @@
 
 					.item__content {
 						position: relative;
+						font-size: 12px;
 						&:not(:last-child) {
 							margin-bottom: 0.875rem;
 						}
@@ -364,24 +385,24 @@
 							color: $white;
 							position: absolute;
 							top: 0;
-							left: -5.3125rem;
+							left: -4.875rem;
 							padding: 0.25rem;
-							width: 3.875rem;
+							width: 3.125rem;
 							text-align: center;
 							text-transform: capitalize;
 							font-weight: 500;
-							font-size: 0.8125rem;
-							line-height: 1.125rem;
+							font-size: 0.6875rem;
+							line-height: 1.4;
 
 							&::after {
 								content: "";
 								position: absolute;
 								top: 0;
-								left: 3.875rem;
+								left: 3.125rem;
 								width: 0;
 								height: 0;
 								border-style: solid;
-								border-width: 22px 0 22px 14px;
+								border-width: 19px 0 19px 8px;
 								border-color: transparent transparent transparent
 									$dark-gray-tml10;
 							}
@@ -396,6 +417,11 @@
 								text-transform: uppercase;
 								font-weight: 500;
 							}
+
+							.location-name {
+								text-align: right;
+								min-width: 148px;
+							}
 						}
 						.item__date {
 							text-transform: capitalize;
@@ -404,7 +430,7 @@
 						}
 						.item__decs {
 							font-weight: 300;
-							line-height: 1.25rem;
+							line-height: 1.2;
 						}
 					}
 				}
@@ -416,9 +442,9 @@
 						.work-experience__item {
 							position: relative;
 							font-style: italic;
-							font-size: 13.5px;
+							font-size: 11px;
 							text-transform: uppercase;
-							line-height: 1.125rem;
+							line-height: 1.5;
 							display: block;
 
 							&:not(:last-child) {
@@ -440,11 +466,13 @@
 								flex-direction: row;
 								justify-content: space-between;
 								.text-primary {
-									font-size: 14px;
+									font-size: 11px;
 									text-transform: uppercase;
 								}
 								span {
 									text-transform: capitalize;
+									text-align: right;
+									min-width: 148px;
 								}
 							}
 
@@ -470,24 +498,26 @@
 								background-color: $dark-gray-tml10;
 								color: $white;
 								position: absolute;
-								top: -0.875rem;
-								left: -5.3125rem;
+								top: 0;
+								left: -4.875rem;
 								padding: 0.25rem;
-								width: 3.875rem;
+								width: 3.125rem;
 								text-align: center;
 								text-transform: capitalize;
 								font-weight: 500;
-								font-size: 0.8125rem;
+								font-size: 0.6875rem;
+								line-height: 1.4;
+								z-index: 2;
 
 								&::after {
 									content: "";
 									position: absolute;
 									top: 0;
-									left: 3.875rem;
+									left: 3.125rem;
 									width: 0;
 									height: 0;
 									border-style: solid;
-									border-width: 22px 0 22px 14px;
+									border-width: 19px 0 19px 8px;
 									border-color: transparent transparent transparent
 										$dark-gray-tml10;
 								}

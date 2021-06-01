@@ -1,6 +1,6 @@
 .cv-template09 {
 	position: relative;
-	font-size: 0.875rem;
+	font-size: 0.8125rem;
 	font-family: $font-times-new-roman;
 	.svg-left {
 		height: 100%;
@@ -63,12 +63,13 @@
 			left: 2.625rem;
 			display: block;
 			z-index: 2;
+			width: 11.25rem;
+			height: 11.25rem;
 
 			img {
-				width: 11.25rem;
-				height: 11.25rem;
+				width: 100%;
+				height: 100%;
 				border-radius: 100%;
-				background-color: $white;
 			}
 		}
 
@@ -262,7 +263,7 @@
 
 						.item__name,
 						.item__position {
-							font-size: 1rem;
+							font-size: 14px;
 						}
 
 						.item__position {

@@ -43,6 +43,11 @@ span {
   color: #000000;
 }
 
+.minus {
+  line-height: 0.4;
+  text-align: center;
+}
+
 .cv-template12 {
   padding: 1.125rem 0.9375rem;
   display: grid;
@@ -910,7 +915,7 @@ span {
 
 .cv-template10 {
   position: relative;
-  font-size: 14px;
+  font-size: 13px;
   background-color: #ebebeb;
   display: flex;
   flex-direction: column;
@@ -1011,8 +1016,8 @@ span {
 .cv-template10 .profile__main .profile__top-content .profile__right-content .profile__desc {
   font-style: italic;
   font-weight: 300;
-  line-height: 1.125rem;
-  font-size: 16px;
+  line-height: 1.4;
+  font-size: 12px;
 }
 .cv-template10 .profile__main .profile__bottom-content {
   border-top: 2px solid #928f93;
@@ -1021,7 +1026,7 @@ span {
 .cv-template10 .profile__main .profile__bottom-content .contact {
   display: flex;
   flex-direction: row;
-  font-size: 12px;
+  font-size: 11px;
   padding: 12px 0;
   margin: 0 20px;
 }
@@ -1038,7 +1043,7 @@ span {
   background-color: #37353a;
   margin-right: 0.5rem;
   border-radius: 100%;
-  width: 2.25rem;
+  min-width: 2.25rem;
   height: 2.25rem;
   display: flex;
   justify-content: center;
@@ -1047,6 +1052,20 @@ span {
 .cv-template10 .profile__main .profile__bottom-content .contact .extra__item .extra__content {
   display: flex;
   flex-direction: column;
+  min-width: 76px;
+  line-break: anywhere;
+}
+.cv-template10 .profile__main .profile__bottom-content .contact .extra__item .phone-width {
+  min-width: 75px;
+}
+.cv-template10 .profile__main .profile__bottom-content .contact .extra__item .address-width {
+  min-width: 198px;
+}
+.cv-template10 .profile__main .profile__bottom-content .contact .extra__item .email-width {
+  min-width: 100px;
+}
+.cv-template10 .profile__main .profile__bottom-content .contact .extra__item .weblink-width {
+  min-width: 130px;
 }
 .cv-template10 .main-primary {
   display: grid;
@@ -1121,11 +1140,16 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   font-weight: 500;
   margin-bottom: 0.25rem;
 }
 .cv-template10 .main-primary .left-layout .education .main__content .education__list .education__item .item__title .item__text {
   text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+.cv-template10 .main-primary .left-layout .education .main__content .education__list .education__item .item__title .item__date {
+  text-align: right;
 }
 .cv-template10 .main-primary .left-layout .education .main__content .education__list .education__item .item__content {
   font-weight: 300;
@@ -1158,7 +1182,7 @@ span {
   color: #ffffff;
   font-weight: 500;
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .cv-template10 .main-primary .left-layout .process__list .process__item .process-outer {
   width: 100%;
@@ -1214,6 +1238,7 @@ span {
 }
 .cv-template10 .main-primary .right-layout .achievement .main__content .item__content {
   position: relative;
+  font-size: 12px;
 }
 .cv-template10 .main-primary .right-layout .achievement .main__content .item__content:not(:last-child) {
   margin-bottom: 0.875rem;
@@ -1232,24 +1257,24 @@ span {
   color: #ffffff;
   position: absolute;
   top: 0;
-  left: -5.3125rem;
+  left: -4.875rem;
   padding: 0.25rem;
-  width: 3.875rem;
+  width: 3.125rem;
   text-align: center;
   text-transform: capitalize;
   font-weight: 500;
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
+  font-size: 0.6875rem;
+  line-height: 1.4;
 }
 .cv-template10 .main-primary .right-layout .achievement .main__content .item__content .date-timeline::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 3.875rem;
+  left: 3.125rem;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 22px 0 22px 14px;
+  border-width: 19px 0 19px 8px;
   border-color: transparent transparent transparent #37353a;
 }
 .cv-template10 .main-primary .right-layout .achievement .main__content .item__content .item__title {
@@ -1262,6 +1287,10 @@ span {
   text-transform: uppercase;
   font-weight: 500;
 }
+.cv-template10 .main-primary .right-layout .achievement .main__content .item__content .item__title .location-name {
+  text-align: right;
+  min-width: 148px;
+}
 .cv-template10 .main-primary .right-layout .achievement .main__content .item__content .item__date {
   text-transform: capitalize;
   font-weight: 300;
@@ -1269,14 +1298,14 @@ span {
 }
 .cv-template10 .main-primary .right-layout .achievement .main__content .item__content .item__decs {
   font-weight: 300;
-  line-height: 1.25rem;
+  line-height: 1.2;
 }
 .cv-template10 .main-primary .right-layout .work-experience .main__content .work-experience__list .work-experience__item {
   position: relative;
   font-style: italic;
-  font-size: 13.5px;
+  font-size: 11px;
   text-transform: uppercase;
-  line-height: 1.125rem;
+  line-height: 1.5;
   display: block;
 }
 .cv-template10 .main-primary .right-layout .work-experience .main__content .work-experience__list .work-experience__item:not(:last-child) {
@@ -1297,11 +1326,13 @@ span {
   justify-content: space-between;
 }
 .cv-template10 .main-primary .right-layout .work-experience .main__content .work-experience__list .work-experience__item .item__title .text-primary {
-  font-size: 14px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 .cv-template10 .main-primary .right-layout .work-experience .main__content .work-experience__list .work-experience__item .item__title span {
   text-transform: capitalize;
+  text-align: right;
+  min-width: 148px;
 }
 .cv-template10 .main-primary .right-layout .work-experience .main__content .work-experience__list .work-experience__item .link,
 .cv-template10 .main-primary .right-layout .work-experience .main__content .work-experience__list .work-experience__item .env {
@@ -1321,30 +1352,32 @@ span {
   background-color: #37353a;
   color: #ffffff;
   position: absolute;
-  top: -0.875rem;
-  left: -5.3125rem;
+  top: 0;
+  left: -4.875rem;
   padding: 0.25rem;
-  width: 3.875rem;
+  width: 3.125rem;
   text-align: center;
   text-transform: capitalize;
   font-weight: 500;
-  font-size: 0.8125rem;
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  z-index: 2;
 }
 .cv-template10 .main-primary .right-layout .work-experience .main__content .work-experience__list .work-experience__item .date-timeline::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 3.875rem;
+  left: 3.125rem;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 22px 0 22px 14px;
+  border-width: 19px 0 19px 8px;
   border-color: transparent transparent transparent #37353a;
 }
 
 .cv-template09 {
   position: relative;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   font-family: "Times New Roman", serif;
 }
 .cv-template09 .svg-left {
@@ -1402,12 +1435,13 @@ span {
   left: 2.625rem;
   display: block;
   z-index: 2;
-}
-.cv-template09 .profile__avatar img {
   width: 11.25rem;
   height: 11.25rem;
+}
+.cv-template09 .profile__avatar img {
+  width: 100%;
+  height: 100%;
   border-radius: 100%;
-  background-color: #ffffff;
 }
 .cv-template09 .profile .contact {
   position: absolute;
@@ -1558,7 +1592,7 @@ span {
 }
 .cv-template09 .primary .experience .main__content .experience__list .experience__item .item__name,
 .cv-template09 .primary .experience .main__content .experience__list .experience__item .item__position {
-  font-size: 1rem;
+  font-size: 14px;
 }
 .cv-template09 .primary .experience .main__content .experience__list .experience__item .item__position {
   margin-bottom: 0.375rem;
@@ -1605,12 +1639,13 @@ span {
 .cv-template08 {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
 }
 .cv-template08 .left__content {
   background-color: #3f3f3f;
   position: relative;
   color: #ffffff;
+  max-width: 18.75rem;
 }
 .cv-template08 .left__content::after {
   content: "";
@@ -1622,32 +1657,41 @@ span {
   top: 0;
   right: 0;
 }
+.cv-template08 .left__content .profile {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .cv-template08 .left__content .profile .profile__avatar {
   width: 10.5rem;
-  height: 12.5rem;
+  min-height: 14.5rem;
   margin: 0 auto;
   margin-top: 2.5rem;
   margin-bottom: 1.75rem;
-  border-radius: 38%;
+  border-radius: 35%;
+  background-color: #fff5dd;
 }
 .cv-template08 .left__content .profile .profile__avatar img {
   overflow: hidden;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 38%;
+  border-radius: 35%;
   border: 3px solid orange;
 }
 .cv-template08 .left__content .profile .profile__name {
   margin: 0 2rem 1.25rem 2.5rem;
   padding-bottom: 0.75rem;
   font-size: 2rem;
+  max-width: max-content;
+  line-break: strict;
   text-transform: uppercase;
   border-bottom: 4px solid #ffffff;
 }
 .cv-template08 .left__content .profile .contact {
   margin-left: 2.5rem;
-  margin-right: 1.25rem;
+  margin-right: 2rem;
 }
 .cv-template08 .left__content .profile .contact .contact__title {
   text-transform: uppercase;
@@ -1656,12 +1700,14 @@ span {
 }
 .cv-template08 .left__content .profile .contact .contact__list .contact__item p {
   line-height: 1.25rem;
+  line-break: anywhere;
 }
 .cv-template08 .left__content .img-on-bottom__content {
-  position: absolute;
-  bottom: -0.25rem;
+  position: relative;
+  bottom: 0;
   left: 0;
   right: 0;
+  height: 100%;
 }
 .cv-template08 .left__content .img-on-bottom__content img {
   width: 100%;
@@ -1705,6 +1751,7 @@ span {
   font-style: italic;
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 0.75rem;
 }
 .cv-template08 .right__content .achievements .main__content .achievement__list .achievement__item .item__desc {
   margin-top: 0.5rem;
@@ -1718,6 +1765,9 @@ span {
 .cv-template08 .right__content .edu-lang .main__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.cv-template08 .right__content .edu-lang .main__content .education .education__list .education__item {
+  font-size: 0.75rem;
 }
 .cv-template08 .right__content .edu-lang .main__content .education .education__list .education__item:not(:last-child) {
   margin-bottom: 0.5rem;
@@ -1762,6 +1812,7 @@ span {
 }
 .cv-template08 .right__content .work-experience .main__content .work-experience__list .work-experience__item {
   font-style: italic;
+  font-size: 0.75rem;
 }
 .cv-template08 .right__content .work-experience .main__content .work-experience__list .work-experience__item:not(:last-child) {
   margin-bottom: 0.75rem;
@@ -1780,7 +1831,7 @@ span {
 }
 .cv-template08 .right__content .work-experience .main__content .work-experience__list .work-experience__item .item__name {
   text-transform: uppercase;
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
 }
 .cv-template08 .right__content .work-experience .main__content .work-experience__list .work-experience__item .item__desc {
   font-weight: 300;
@@ -1802,7 +1853,7 @@ span {
 .cv-template08 .right__content .skill .main__content .skill__list .skill__item .item__name {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 0.75rem;
 }
 .cv-template08 .right__content .skill .main__content .skill__list .skill__item .dot-outer {
   position: relative;
@@ -1813,7 +1864,7 @@ span {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #37353a;
-  font-size: 0.6875rem;
+  font-size: 10px;
 }
 .cv-template08 .right__content .skill .main__content .skill__list .skill__item .dot-inner {
   position: absolute;
@@ -1828,7 +1879,7 @@ span {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #f28c1c;
-  font-size: 0.6875rem;
+  font-size: 10px;
 }
 .cv-template08 .right__content .interest-hobbies .main__content .hobby__list {
   display: flex;
@@ -1849,7 +1900,7 @@ span {
   text-transform: uppercase;
   font-size: 1rem;
   margin-top: 0.5rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 .cv-template08 .tags__list {
   display: flex;
@@ -1863,7 +1914,7 @@ span {
   display: inline-block;
   color: #ffffff;
   font-style: italic;
-  font-size: 13px;
+  font-size: 0.6875rem;
   padding: 0.25rem 0.375rem;
   border-radius: 0.25rem;
   margin-bottom: 0.25rem;
@@ -1921,8 +1972,8 @@ span {
 }
 
 .cv-template07 {
-  border-top: 6px solid #414143;
-  border-bottom: 6px solid #414143;
+  border-top: 10px solid #414143;
+  border-bottom: 10px solid #414143;
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -1969,7 +2020,7 @@ span {
   margin-top: 2.375rem;
   margin-bottom: 3rem;
   width: 100%;
-  padding: 0 1.75rem;
+  padding: 0 1.5rem;
 }
 .cv-template07 .top__layout .row-1 .contact .contact__list .contact__item {
   display: flex;
@@ -1982,6 +2033,8 @@ span {
 .cv-template07 .top__layout .row-1 .contact .contact__list .contact__item .item-phone,
 .cv-template07 .top__layout .row-1 .contact .contact__list .contact__item .item-website {
   width: 1.625rem;
+  min-width: 1.625rem;
+  max-height: 3rem;
   height: 1.625rem;
   background-color: #f28c1c;
   display: flex;
@@ -2010,6 +2063,13 @@ span {
   top: 0;
   right: 0;
 }
+.cv-template07 .top__layout .row-1 .contact .contact__list .contact__item .item__name {
+  font-weight: 500;
+  line-break: loose;
+}
+.cv-template07 .top__layout .row-1 .contact .contact__list .contact__item .item__name.mail {
+  line-break: anywhere;
+}
 .cv-template07 .top__layout .row-1 .contact .contact__list .contact__item .item-location {
   background-color: #3ebebf;
 }
@@ -2028,14 +2088,13 @@ span {
 .cv-template07 .top__layout .row-1 .contact .contact__list .contact__item .item-website::before {
   border-color: transparent #ed4556 transparent transparent;
 }
-.cv-template07 .top__layout .row-1 .contact .contact__list .contact__item .item__name {
-  font-weight: 500;
-}
 .cv-template07 .top__layout .row-1 .contact .social-network {
+  width: 13.125rem;
   text-transform: uppercase;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
-  width: max-content;
+  word-break: break-all;
+  max-width: max-content;
   padding: 0.25rem 0;
   transform: skewX(-20deg) rotate(-15deg);
   margin-bottom: 3.25rem;
@@ -2081,6 +2140,8 @@ span {
   border-bottom: 2px solid #000000;
   width: max-content;
   margin: 0.5rem 0;
+  word-break: break-all;
+  width: 15rem;
 }
 .cv-template07 .top__layout .row-3 .profile__name .position__list {
   margin-top: 0.5rem;
@@ -2146,8 +2207,8 @@ span {
   left: 0;
 }
 .cv-template07 .mid__layout .row-1 .dot .dot-2 {
-  width: 104px;
-  bottom: -72px;
+  width: 106px;
+  bottom: -70px;
   right: -9px;
 }
 .cv-template07 .mid__layout .row-1 .skill-education {
@@ -2174,23 +2235,30 @@ span {
 .cv-template07 .mid__layout .row-1 .skill-education .main__content .education__list .education__item .item__title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .cv-template07 .mid__layout .row-1 .skill-education .main__content .education__list .education__item .item__title .title-name {
   font-weight: 500;
+  font-size: 0.8125rem;
   text-transform: uppercase;
+  padding-top: 0.125rem;
 }
 .cv-template07 .mid__layout .row-1 .skill-education .main__content .education__list .education__item .item__title .title-date {
   color: #ffffff;
   font-weight: 500;
   font-size: 1rem;
+  text-align: right;
+}
+.cv-template07 .mid__layout .row-1 .skill-education .main__content .education__list .education__item .item__degree,
+.cv-template07 .mid__layout .row-1 .skill-education .main__content .education__list .education__item .item__desc {
+  font-size: 0.75rem;
 }
 .cv-template07 .mid__layout .row-1 .skill-education .main__content .skill__list .process__item:not(:last-child) {
   margin-bottom: 0.5rem;
 }
 .cv-template07 .mid__layout .row-1 .skill-education .main__content .skill__list .process__item .item__name {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 4px;
   font-size: 0.8125rem;
 }
@@ -2205,8 +2273,8 @@ span {
 }
 .cv-template07 .mid__layout .row-2 {
   background-color: #3ebebf;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 0.1875rem;
+  margin-right: 0.1875rem;
   position: relative;
 }
 .cv-template07 .mid__layout .row-2::before {
@@ -2223,7 +2291,7 @@ span {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 68px 274px;
+  border-width: 0 0 68px 273px;
   border-color: transparent transparent #3ebebf transparent;
   position: absolute;
   top: -10.5rem;
@@ -2245,7 +2313,6 @@ span {
   text-transform: uppercase;
   color: #ffffff;
   font-style: italic;
-  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 .cv-template07 .mid__layout .row-2 .history-achievement .main__content .h-a__list .h-a__item .item__title .name {
@@ -2256,7 +2323,7 @@ span {
 }
 .cv-template07 .mid__layout .row-2 .history-achievement .main__content .h-a__list .h-a__item .item__desc {
   font-weight: 300;
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   line-height: 1.4;
   font-style: italic;
 }
@@ -2265,9 +2332,9 @@ span {
   border-color: #3ebebf transparent transparent transparent;
 }
 .cv-template07 .mid__layout .row-2 .dot .dot-1 {
-  width: 12rem;
-  bottom: -4.5rem;
-  left: -0.25rem;
+  width: 194px;
+  bottom: -71px;
+  left: -6px;
 }
 .cv-template07 .mid__layout .row-2 .dot .dot-2 {
   width: 6.5rem;
@@ -2277,6 +2344,7 @@ span {
 .cv-template07 .mid__layout .row-3 {
   background-color: #ed4556;
   margin-left: 3px;
+  padding-bottom: 3rem;
   position: relative;
 }
 .cv-template07 .mid__layout .row-3::before {
@@ -2294,6 +2362,9 @@ span {
   padding-left: 1.625rem;
   padding-right: 1.625rem;
 }
+.cv-template07 .mid__layout .row-3 .work-experience .title__content span {
+  right: 0;
+}
 .cv-template07 .mid__layout .row-3 .work-experience .main__content .work-experience__list .work-experience__item {
   font-style: italic;
 }
@@ -2301,7 +2372,7 @@ span {
   margin-bottom: 0.75rem;
 }
 .cv-template07 .mid__layout .row-3 .work-experience .main__content .work-experience__list .work-experience__item .item__date {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #ffffff;
   font-weight: 500;
   margin-bottom: 0.5rem;
@@ -2309,14 +2380,14 @@ span {
 .cv-template07 .mid__layout .row-3 .work-experience .main__content .work-experience__list .work-experience__item p {
   display: flex;
   margin-bottom: 0.25rem;
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
 }
 .cv-template07 .mid__layout .row-3 .work-experience .main__content .work-experience__list .work-experience__item p strong {
   margin-right: 0.1875rem;
   text-transform: uppercase;
 }
 .cv-template07 .mid__layout .row-3 .work-experience .main__content .work-experience__list .work-experience__item .item__desc {
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   line-height: 1.4;
 }
 .cv-template07 .mid__layout .row-3 .work-experience .main__content .work-experience__list .work-experience__item .item__name,
@@ -2337,7 +2408,7 @@ span {
 }
 .cv-template07 .mid__layout .row-3 .dot .dot-1 {
   width: 280px;
-  bottom: -60px;
+  bottom: -62px;
   left: -6px;
 }
 .cv-template07 .mid__layout .row-3 .dot .dot-2 {
@@ -2384,9 +2455,9 @@ span {
   right: 0;
 }
 .cv-template07 .mid__layout .dot .dot-1 {
-  width: 188px;
-  height: 1px;
-  border-top: 4px dotted #8c8e8b;
+  width: 186px;
+  height: 4px;
+  border-top: 4px dashed #8c8e8b;
   position: absolute;
   bottom: -68px;
   left: 0;
@@ -2395,9 +2466,9 @@ span {
 .cv-template07 .mid__layout .dot .dot-2 {
   width: 96px;
   height: 1px;
-  border-top: 4px dotted #8c8e8b;
+  border-top: 4px dashed #8c8e8b;
   position: absolute;
-  bottom: -71px;
+  bottom: -69px;
   right: -6px;
   transform: rotate(28deg);
 }
@@ -2484,7 +2555,7 @@ span {
   fill: none;
   stroke: #8c8e8b;
   stroke-width: 10;
-  stroke-linecap: round;
+  stroke-linecap: butt;
   transform: translate(0.3125rem, 0.3125rem);
   stroke-dasharray: 440;
 }
@@ -2514,7 +2585,8 @@ span {
 .cv-template07 .bottom__layout .hobby {
   display: flex;
   justify-content: center;
-  margin: 2rem 0;
+  align-items: center;
+  margin: 0.875rem 0;
 }
 .cv-template07 .bottom__layout .hobby .title__content {
   color: #3ebebf;
@@ -2540,7 +2612,7 @@ span {
   text-transform: uppercase;
   font-size: 1rem;
   margin-top: 0.5rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
