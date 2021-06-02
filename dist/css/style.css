@@ -53,6 +53,7 @@ span {
   display: grid;
   grid-template-columns: 17.5rem auto;
   background: #e7e7e7;
+  font-size: 0.75;
 }
 .cv-template12 .cv-primary {
   background-color: #202835;
@@ -73,7 +74,7 @@ span {
 }
 .cv-template12 .cv-primary .profile__image img {
   width: 100%;
-  height: 100%;
+  height: 100% position__info;
   border-radius: 999px;
 }
 .cv-template12 .cv-primary .profile__info {
@@ -99,13 +100,15 @@ span {
   padding: 0 16px;
   font-style: italic;
   font-weight: 300;
-  line-height: 1.25rem;
+  line-height: 1.3;
+  font-size: 0.75rem;
 }
 .cv-template12 .cv-primary .contact__content .extra__item {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0.5rem 0;
+  font-size: 11px;
 }
 .cv-template12 .cv-primary .contact__content .extra__title {
   margin-right: 0.5rem;
@@ -113,19 +116,28 @@ span {
 .cv-template12 .cv-primary .contact__content .extra__title i {
   color: #f28c1c;
   width: 18px;
+  font-size: 13px;
 }
 .cv-template12 .cv-primary .contact__content .extra__content {
   font-style: italic;
   color: #ffffff;
+  word-break: break-all;
+}
+.cv-template12 .cv-primary .contact__content .extra__address-child {
+  word-break: normal;
 }
 .cv-template12 .cv-primary .education__content .education__item {
   display: flex;
+  font-size: 12px;
 }
 .cv-template12 .cv-primary .education__content .education__item .item__title {
   color: #f28c1c;
   font-weight: 500;
   font-style: italic;
   margin-right: 12px;
+}
+.cv-template12 .cv-primary .education__content .education__item .item__title .item__date {
+  width: 2.75rem;
 }
 .cv-template12 .cv-primary .education__content .education__item .item__content {
   display: flex;
@@ -145,6 +157,12 @@ span {
   display: flex;
   justify-content: space-between;
 }
+.cv-template12 .cv-primary .languages__content .language__content .language__item:not(:last-child) {
+  margin-bottom: 0.125rem;
+}
+.cv-template12 .cv-primary .languages__content .language__content .language__item .language__title {
+  font-size: 12px;
+}
 .cv-template12 .cv-primary .languages__content .language__content .language__item .star-outer {
   position: relative;
   display: inline-block;
@@ -153,6 +171,7 @@ span {
   content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 200;
+  font-size: 0.75rem;
   color: #f28c1c;
 }
 .cv-template12 .cv-primary .languages__content .language__content .language__item .star-inner {
@@ -167,17 +186,20 @@ span {
   content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  font-size: 0.75rem;
   color: #f28c1c;
 }
 .cv-template12 .cv-primary .achievements__content .achievement__item {
   display: flex;
   margin-bottom: 0.5rem;
+  font-size: 0.75rem;
 }
 .cv-template12 .cv-primary .achievements__content .achievement__item .item__date {
-  margin-right: 0.75rem;
-  font-weight: 700;
+  margin-right: 0.5rem;
+  font-weight: 500;
   font-style: italic;
   color: #f28c1c;
+  min-width: 2.75rem;
 }
 .cv-template12 .cv-primary .achievements__content .achievement__item .item__text {
   font-style: italic;
@@ -229,7 +251,8 @@ span {
 .cv-template12 .cv-extra .summary__content {
   font-style: italic;
   font-weight: 300;
-  line-height: 1.25rem;
+  line-height: 1.4;
+  font-size: 0.75rem;
 }
 .cv-template12 .cv-extra .skill__content {
   padding: 0 1rem;
@@ -242,6 +265,8 @@ span {
 .cv-template12 .cv-extra .skill__content .skill__item .item__title {
   margin-bottom: 0.375rem;
   font-style: italic;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 .cv-template12 .cv-extra .skill__content .skill__item .skill-bar__outer {
   position: relative;
@@ -274,6 +299,7 @@ span {
 .cv-template12 .cv-extra .career-history__content .career-history__item {
   padding-left: 28px;
   position: relative;
+  font-size: 0.75rem;
 }
 .cv-template12 .cv-extra .career-history__content .career-history__item:not(:last-child) {
   margin-bottom: 20px;
@@ -289,12 +315,15 @@ span {
   font-weight: 300;
 }
 .cv-template12 .cv-extra .career-history__content .career-history__item .item__title {
-  font-size: 1rem;
+  font-size: 0.8125rem;
   font-weight: 500;
+}
+.cv-template12 .cv-extra .career-history__content .career-history__item .item__datetime {
+  font-size: 0.75rem;
 }
 .cv-template12 .cv-extra .career-history__content .career-history__item .item__desc {
   font-style: italic;
-  line-height: 1.25rem;
+  line-height: 1.4;
   font-weight: 300;
 }
 .cv-template12 .cv-extra .career-history__content .career-history__item::after {
@@ -323,6 +352,7 @@ span {
   padding-left: 28px;
   position: relative;
   font-style: italic;
+  font-size: 0.75rem;
 }
 .cv-template12 .cv-extra .project__content .ticker__list .ticker__item.project__item:not(:last-child),
 .cv-template12 .cv-extra .project__content .ticker__list .ticker__item:not(:last-child),
@@ -384,7 +414,7 @@ span {
 .cv-template12 .cv-extra .project__content .ticker__list .ticker__item .project__title .text-primary,
 .cv-template12 .cv-extra .reference__content .ticker__list .ticker__item.project__item .project__title .text-primary,
 .cv-template12 .cv-extra .reference__content .ticker__list .ticker__item .project__title .text-primary {
-  font-size: 1rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -393,12 +423,16 @@ span {
 .cv-template12 .cv-extra .reference__content .ticker__list .ticker__item.project__item .project__title span,
 .cv-template12 .cv-extra .reference__content .ticker__list .ticker__item .project__title span {
   display: flex;
+  text-align: right;
+  max-width: 112px;
+  margin-left: 0.5rem;
 }
 .cv-template12 .cv-extra .project__content .ticker__list .ticker__item.project__item .project__title span span,
 .cv-template12 .cv-extra .project__content .ticker__list .ticker__item .project__title span span,
 .cv-template12 .cv-extra .reference__content .ticker__list .ticker__item.project__item .project__title span span,
 .cv-template12 .cv-extra .reference__content .ticker__list .ticker__item .project__title span span {
   margin: 0 3px;
+  text-align: center;
 }
 .cv-template12 .cv-extra .project__content .ticker__list .ticker__item.project__item p,
 .cv-template12 .cv-extra .project__content .ticker__list .ticker__item p,
@@ -411,6 +445,10 @@ span {
 .cv-template12 .cv-extra .reference__content .ticker__list .ticker__item.project__item p strong,
 .cv-template12 .cv-extra .reference__content .ticker__list .ticker__item p strong {
   font-weight: 500;
+}
+.cv-template12 .cv-extra .project__content .ticker__list .ticker__item,
+.cv-template12 .cv-extra .reference__content .ticker__list .ticker__item {
+  font-size: 12px;
 }
 .cv-template12 .cv-extra .project__content .ticker__list .ticker__item .reference-item__title,
 .cv-template12 .cv-extra .reference__content .ticker__list .ticker__item .reference-item__title {
@@ -464,7 +502,7 @@ span {
 .cv-template11 {
   background-color: #ffffff;
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
 }
 .cv-template11 .svg-top {
   position: relative;
@@ -522,14 +560,20 @@ span {
   top: 1.25rem;
   left: 36.25rem;
   right: 0;
+  width: 12.5rem;
+  height: 12.5rem;
 }
 .cv-template11 .profile__avatar .profile__image {
-  max-width: 12.5rem;
-  max-height: 12.5rem;
+  width: 12.5rem;
+  height: 12.5rem;
+  display: flex;
+  align-items: flex-end;
 }
 .cv-template11 .profile__avatar .profile__image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 .cv-template11 .profile .about__content .content__title {
   position: absolute;
@@ -545,8 +589,9 @@ span {
   position: absolute;
   top: 13.375rem;
   left: 5.875rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-style: italic;
+  font-weight: 300;
   color: #ffffff;
   max-width: 21.875rem;
   z-index: 2;
@@ -625,6 +670,7 @@ span {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
+  font-size: 12px;
 }
 .cv-template11 .primary__content .layout__left .contact .main__content .extra__item:not(:last-child) {
   margin-bottom: 0.625rem;
@@ -638,6 +684,15 @@ span {
 .cv-template11 .primary__content .layout__left .contact .main__content .extra__item .extra__title i {
   font-size: 1.75rem;
   margin: 0 auto;
+}
+.cv-template11 .primary__content .layout__left .contact .main__content .extra__item .address-child {
+  line-break: strict;
+}
+.cv-template11 .primary__content .layout__left .contact .main__content .extra__item .mail-child {
+  word-break: break-all;
+}
+.cv-template11 .primary__content .layout__left .contact .main__content .extra__item .social-child {
+  word-break: break-all;
 }
 .cv-template11 .primary__content .layout__left .contact .main__content .extra__item .extra__content {
   display: flex;
@@ -657,7 +712,7 @@ span {
 .cv-template11 .primary__content .layout__left .language .main__content .language__item .item__name {
   margin-bottom: 0.375rem;
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
 }
 .cv-template11 .primary__content .layout__left .language .main__content .language__item .ribbon-outer {
   width: 2.875rem;
@@ -775,6 +830,7 @@ span {
 }
 .cv-template11 .primary__content .layout__left .skill .main__content .skill__item .text__skill {
   font-weight: 500;
+  font-size: 0.6875rem;
 }
 .cv-template11 .primary__content .layout__left .hobby .main__content {
   display: grid;
@@ -839,7 +895,7 @@ span {
   color: #3a4245;
 }
 .cv-template11 .primary__content .layout__right .achievement .main__content .achievement__item {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 .cv-template11 .primary__content .layout__right .achievement .main__content .achievement__item:not(:last-child) {
   margin-bottom: 1rem;
@@ -847,6 +903,7 @@ span {
 .cv-template11 .primary__content .layout__right .achievement .main__content .achievement__item .item__title {
   font-weight: 500;
   text-transform: uppercase;
+  font-style: italic;
 }
 .cv-template11 .primary__content .layout__right .achievement .main__content .achievement__item .item__date-working {
   font-weight: 300;
@@ -857,7 +914,7 @@ span {
 .cv-template11 .primary__content .layout__right .achievement .main__content .achievement__item .item__desc {
   font-weight: 300;
   font-style: italic;
-  line-height: 1.25rem;
+  line-height: 1.3;
 }
 .cv-template11 .primary__content .layout__right .education .main__content .education__item:not(:last-child) {
   margin-bottom: 0.5rem;
@@ -866,6 +923,7 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 0.6875rem;
 }
 .cv-template11 .primary__content .layout__right .education .main__content .education__item .item__title .item__text,
 .cv-template11 .primary__content .layout__right .education .main__content .education__item .item__title .item__date {
@@ -873,30 +931,50 @@ span {
   font-weight: 500;
   text-transform: uppercase;
 }
+.cv-template11 .primary__content .layout__right .education .main__content .education__item .item__title .item__date {
+  display: flex;
+  text-align: right;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 224px;
+}
+.cv-template11 .primary__content .layout__right .education .main__content .education__item .item__title .item__date .minus {
+  line-height: 1;
+  margin: 0 4px;
+}
 .cv-template11 .primary__content .layout__right .education .main__content .education__item .item__content {
   font-size: 0.875rem;
   font-style: italic;
   font-weight: 300;
+  font-size: 0.6875rem;
 }
 .cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item {
   font-style: italic;
-  line-height: 1.25rem;
+  line-height: 1.4;
+  font-size: 0.6875rem;
 }
 .cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item .item__title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-transform: uppercase;
+  font-size: 0.75rem;
 }
 .cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item .item__title span {
   text-transform: capitalize;
+  font-size: 0.6875rem;
   display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  max-width: 112px;
+  line-height: 1;
 }
-.cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item .item__title span span {
-  margin: 0 3px;
+.cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item .item__title .minus {
+  line-height: 1;
+  margin: 0 4px;
 }
 .cv-template11 .primary__content .layout__right .work-experience .main__content .work-experience__list .work-experience__item p {
   text-transform: uppercase;
@@ -1131,7 +1209,7 @@ span {
 }
 .cv-template10 .main-primary .left-layout .education .main__content .education__list .education__item {
   font-style: italic;
-  font-size: 12px;
+  font-size: 0.6875rem;
 }
 .cv-template10 .main-primary .left-layout .education .main__content .education__list .education__item:not(:last-child) {
   margin-bottom: 0.5rem;
@@ -1286,6 +1364,7 @@ span {
 .cv-template10 .main-primary .right-layout .achievement .main__content .item__content .item__title .title-name {
   text-transform: uppercase;
   font-weight: 500;
+  font-size: 0.6875rem;
 }
 .cv-template10 .main-primary .right-layout .achievement .main__content .item__content .item__title .location-name {
   text-align: right;
@@ -1294,7 +1373,7 @@ span {
 .cv-template10 .main-primary .right-layout .achievement .main__content .item__content .item__date {
   text-transform: capitalize;
   font-weight: 300;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 .cv-template10 .main-primary .right-layout .achievement .main__content .item__content .item__decs {
   font-weight: 300;

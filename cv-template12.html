@@ -61,13 +61,13 @@
                     <p class="extra__title">
                         <i class="fas fa-envelope-open-text"></i>
                     </p>
-                    <p class="extra__content">eu_facilisis_sed@amet.enim</p>
+                    <p class="extra__content">eeu_facilisis_sedu_facilisis_sed@amet.enim</p>
                 </div>
                 <div class="extra__item" v-show="data.profile.phone">
                     <p class="extra__title">
                         <i class="fas fa-home"></i>
                     </p>
-                    <p class="extra__content">eu, facilisis, sed</p>
+                    <p class="extra__content extra__address-child">10 Pho Quang, Tan Binh, Ho Chi Minh City</p>
                 </div>
                 <div class="extra__item" v-show="data.profile.phone">
                     <p class="extra__title">
@@ -84,7 +84,9 @@
                 <div class="education__item" v-for="(item, index) in educationComputed.data" :key="'education' + index">
                     <div class="item__title">
                         <span class="item__date">
-                            2026
+                            02/2026
+                            <span class="minus">-</span>
+                            03/2019
                         </span>
                     </div>
                     <div class="item__content">
@@ -126,7 +128,9 @@
                 <h2 class="achievements__title">achievements</h2>
                 <div class="achievement__content">
                     <div class="achievement__item">
-                        <span class="item__date">2013</span>
+                        <span class="item__date">
+                            02/2026
+                        </span>
                         <span class="item__text">Ten thanh tich/giai thuong ()aasdfwe</span>
                     </div>
                     <div class="achievement__item">
@@ -172,7 +176,7 @@
             <div class="summary" v-show="data.summary">
                 <div class="section__title">
                     <span class="section__icon">
-                        <i class="fas fa-address-card"></i>
+                        <i class="fas fa-bullseye"></i>
                     </span>
                     <span class="section__text">SUMMARY</span>
                 </div>
@@ -283,12 +287,12 @@
                                 :key="'project' + index">
                                 <div class="project__title">
                                     <p class="text-primary">
-                                        pellentesque dignissim enim sit amet
+                                        pellentesque dignissim enim sit amet dignissim enim sit amet
                                     </p>
                                     <span>
-                                        enim
+                                        October 2019
                                         <span v-show="item.start_date && item.end_date"> - </span>
-                                        amet
+                                        September 2020
                                     </span>
                                 </div>
                                 <p v-show="item.position">
@@ -323,7 +327,7 @@
                 <div class="reference" v-show="!!referenceComputed.length">
                     <div class="section__title">
                         <span class="section__icon">
-                            <i class="fas fa-archive"></i>
+                            <i class="fas fa-puzzle-piece"></i>
                         </span>
                         <span class="section__text">REFERENCES</span>
                     </div>

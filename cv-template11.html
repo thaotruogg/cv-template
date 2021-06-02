@@ -79,7 +79,7 @@
             </div>
             <div class="profile__avatar">
                 <div class="profile__image" v-if="data.profile.avatar">
-                    <img src="/images/avatar.png" alt="Avatar" />
+                    <img src="/images/avatar.jpg" alt="Avatar" />
                 </div>
             </div>
         </div>
@@ -98,13 +98,13 @@
                             <p class="extra__title">
                                 <i class="fas fa-home"></i>
                             </p>
-                            <p class="extra__content">eu, facilisis, sed</p>
+                            <p class="extra__content address-child">10 Pho Quang, Tan Binh, Tp Ho Chi Minh</p>
                         </div>
                         <div class="extra__item" v-show="data.profile.phone">
                             <p class="extra__title">
                                 <i class="fas fa-envelope"></i>
                             </p>
-                            <p class="extra__content">eu, facilisis, sed</p>
+                            <p class="extra__content mail-child">mail_mail123123@growupwork.com.vn</p>
                         </div>
                         <div class="extra__item" v-show="data.profile.phone">
                             <p class="extra__title">
@@ -119,7 +119,7 @@
                             <p class="extra__title">
                                 <i class="fab fa-facebook-square"></i>
                             </p>
-                            <p class="extra__content">facebook.com/facilisis</p>
+                            <p class="extra__content social-child">facebook.com/facilisis</p>
                         </div>
                     </div>
                 </div>
@@ -214,14 +214,16 @@
                         <div class="education__item">
                             <div class="item__title">
                                 <span class="item__text">
-                                    growupwork university
+                                    growupwork university growupwork university
                                 </span>
                                 <span class="item__date">
-                                    2016
+                                    October 2016
                                     <!-- <span v-show="item.start_date && item.end_date">
                                         -
                                     </span>
                                     {{ item.end_date }} -->
+                                    <span class="minus">-</span>
+                                    December 2018
                                 </span>
                             </div>
                             <div class="item__content">
@@ -284,9 +286,9 @@
                                         <strong>company:</strong> pellentesque enim sit amet
                                     </p>
                                     <span>
-                                        enim
-                                        <span v-show="item.start_date && item.end_date"> - </span>
-                                        amet
+                                        October 2016
+                                        <span class="minus">-</span>
+                                        September 2018
                                     </span>
                                 </div>
                                 <p>

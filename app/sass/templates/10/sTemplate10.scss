@@ -241,7 +241,7 @@
 							&:not(:last-child) {
 								margin-bottom: 0.5rem;
 							}
-							font-size: 12px;
+							font-size: 0.6875rem;
 
 							.item__title {
 								display: flex;
@@ -416,6 +416,7 @@
 							.title-name {
 								text-transform: uppercase;
 								font-weight: 500;
+								font-size: 0.6875rem;
 							}
 
 							.location-name {
@@ -426,7 +427,7 @@
 						.item__date {
 							text-transform: capitalize;
 							font-weight: 300;
-							margin-bottom: 0.5rem;
+							margin-bottom: 0.25rem;
 						}
 						.item__decs {
 							font-weight: 300;
