@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            /* Base setting, you can remove */
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+        }
+
+        .tab1 {
+            --ui-background: #5f50f1;
+            display: inline-flex;
+            padding: 10px;
+            background-color: var(--ui-background);
+            border-radius: 10px;
+        }
+
+        .tab1 .tab-item {
+            display: inline-block;
+            padding: 10px 30px;
+            color: white;
+            cursor: pointer;
+            white-space: nowrap;
+            border-radius: inherit;
+            transition: all 0.2s linear;
+        }
+
+        .tab1 .tab-item+.tab-item {
+            margin-left: 15px;
+        }
+
+        .tab1 .tab-item.is-active {
+            background-color: white;
+            color: var(--ui-background);
+        }
+    </style>
+    <div class="tab1">
+        <div class="tab-item is-active">Popular</div>
+        <div class="tab-item">Latest</div>
+    </div>
+</body>
+
+</html>
